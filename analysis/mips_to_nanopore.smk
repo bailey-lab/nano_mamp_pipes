@@ -4,28 +4,28 @@ root_dir = os.path.dirname(os.path.realpath(__file__))
 """
 Development Notebook:
 _______________________________________________________________________________________________________________________________________
-40207: Using nested config object defined in yaml allow safely reusing variable names like input_dir for different sections of the pipeline
+240207: Using nested config object defined in yaml allow safely reusing variable names like input_dir for different sections of the pipeline
 		without having to worry about overwriting variables. Called in smk using syntax: config["all_section_paths"]["mapping_section"]["input_dir"] 
 		and config["all_section_paths"]["variant_calling_section"]["input_dir"] (GT)
 
-40207: I'm not sure that I have properly formatted the root directory in the yaml. I use the root: /nano_mamp_pipes/ in all paths 
+240207: I'm not sure that I have properly formatted the root directory in the yaml. I use the root: /nano_mamp_pipes/ in all paths 
 		which are written (and subsequently read) by the tool. I think may need to use the `os` module to find the location of this smk file to
 		properly format the working directory like this:
 
-# in beginning of smk file:
-root_dir = os.path.dirname(os.path.realpath(__file__)) # already implemented above
+		# in beginning of smk file:
+		root_dir = os.path.dirname(os.path.realpath(__file__)) # already implemented above
 
-# in yaml: #TODO
-mapping_section:
-  output_dir: "analysis/alignments"
+		# in yaml: #TODO
+		mapping_section:
+		  output_dir: "analysis/alignments"
 
-# in smk file - construct the path to the output directory"  #TODO
-mapping_output_dir = os.path.join(root_dir, config['mapping_section']['output_dir'])
+		# in smk file - construct the path to the output directory"  #TODO
+		mapping_output_dir = os.path.join(root_dir, config['mapping_section']['output_dir'])
 
-# in smk file - insert into rule:  #TODO
-rule example_rule:
-    output:
-        os.path.join(mapping_output_dir, "output_file.txt")
+		# in smk file - insert into rule:  #TODO
+		rule example_rule:
+    		output:
+        		os.path.join(mapping_output_dir, "output_file.txt")
 _______________________________________________________________________________________________________________________________________
 
 240207: Instead of splitting this smk and yaml into sections,  we may want to look into using mutiple smk files and calling them in 
@@ -56,40 +56,41 @@ rule all:
 
 
 """
-
-
 _______________________________________________________________________________________________________________________________________
 
 Section 1) guppy_basecalling
 _______________________________________________________________________________________________________________________________________
+"""
 
-
+"""
 _______________________________________________________________________________________________________________________________________
 
 Section 2) cat_fastqs:
 _______________________________________________________________________________________________________________________________________
+"""
 
-
-
-
-
-
+"""
 _______________________________________________________________________________________________________________________________________
 
 Section 3) get_barcode_numbers
 _______________________________________________________________________________________________________________________________________
+"""
 
-
+"""
 _______________________________________________________________________________________________________________________________________
 
 Section 4) get_barcode_seqs
 _______________________________________________________________________________________________________________________________________
+"""
 
+"""
 _______________________________________________________________________________________________________________________________________
 
 Section 5) demux_samples
 _______________________________________________________________________________________________________________________________________
+"""
 
+"""
 _______________________________________________________________________________________________________________________________________
 
 Section 6) mapping_section
