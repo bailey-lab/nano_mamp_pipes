@@ -1,0 +1,26 @@
+# resources paths for each step: (organize paths by grouping those which are used in each main module (alignment, variant calling, etc)) - these are read in nested config obj 
+all_section_paths:
+# Section 1): mapping_section
+  mapping_section:
+    output_dir: /nano_mamp_pipes/analysis/alignments
+    fastq_dir: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/run_230508_mipstoNanopore_P2/extractedByIlluminaBarcodes/fastq # this is modified by user
+    temp_dir: /nano_mamp_pipes/analysis/temp
+# Section 2): variant_calling_section
+  variant_calling_section:
+    output_dir: /nano_mamp_pipes/analysis/variant_calling
+    input_dir: /nano_mamp_pipes/analysis/alignments
+    sif_path: /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif # user must install and put their installation path here
+    resource_dir: /nano_mamp_pipes/resources # was /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/bams_to_vcf/resources
+    reference_dir: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes # user replaces with their reference folder containing a fastq file
+    reference_fasta_filename: genome.fa # user replaces with their reference fasta filename (examples: hg38.fa, Pf3D7_v3.fasta)
+# Section 3): vcf_to_tables_section
+  vcf_to_tables_section:
+    input_dir: /nano_mamp_pipes/analysis/variant_calling
+    output_dir: /nano_mamp_pipes/analysis/vcf_to_tables
+# Section 4): miplithon_section
+  miplithon_section:
+    input_dir: /nano_mamp_pipes/analysis/vcf_to_tables
+    output_dir: /nano_mamp_pipes/analysis/miplithon
+
+#sam_folder: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/run_230508_mipstoNanopore_P2/map_to_bam/output_files/bam_mapped/sam_main_files # old contents - not used currently
+#project_resources: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_project_resources/DR23K # old contents - not used currently
