@@ -1,5 +1,4 @@
 configfile: 'mips_to_nanopore.yaml'
-root_dir = os.path.dirname(os.path.realpath(__file__))
 
 """
 Development Notebook:
@@ -37,7 +36,7 @@ ________________________________________________________________________________
 import os
 import glob
 
-configfile: "mips_to_nanopore.yaml"
+root_dir = os.path.dirname(os.path.realpath(__file__))
 
 # Function to get sample names based on FASTQ file prefixes
 def get_samples():
