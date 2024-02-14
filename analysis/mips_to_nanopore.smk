@@ -1,93 +1,50 @@
-configfile: 'mips_to_nanopore.yaml'
-
 """
-Development Notebook:
-_______________________________________________________________________________________________________________________________________
-240207: Using nested config object defined in yaml allow safely reusing variable names like input_dir for different sections of the pipeline
-		without having to worry about overwriting variables. Called in smk using syntax: config["all_section_paths"]["mapping_section"]["input_dir"] 
-		and config["all_section_paths"]["variant_calling_section"]["input_dir"] (GT)
-
-240207: I'm not sure that I have properly formatted the root directory in the yaml. I use the root: /nano_mamp_pipes/ in all paths 
-		which are written (and subsequently read) by the tool. I think may need to use the `os` module to find the location of this smk file to
-		properly format the working directory like this:
-
-		# in beginning of smk file:
-		root_dir = os.path.dirname(os.path.realpath(__file__)) # already implemented above
-
-		# in yaml: #TODO
-		mapping_section:
-		  output_dir: "analysis/alignments"
-
-		# in smk file - construct the path to the output directory"  #TODO
-		mapping_output_dir = os.path.join(root_dir, config['mapping_section']['output_dir'])
-
-		# in smk file - insert into rule:  #TODO
-		rule example_rule:
-    		output:
-        		os.path.join(mapping_output_dir, "output_file.txt")
-_______________________________________________________________________________________________________________________________________
-
 240207: Instead of splitting this smk and yaml into sections,  we may want to look into using mutiple smk files and calling them in 
 		this centralized smk using `include` or `subflow` to make the rule execution less complicated and code more 
 		modular(readable/debuggable/etc) (GT)
 _______________________________________________________________________________________________________________________________________
+
 """
+configfile: 'mips_to_nanopore.yaml'
 
-import os
-import glob
-
-root_dir = os.path.dirname(os.path.realpath(__file__))
+root_dir=config['output_dir']
 
 # Function to get sample names based on FASTQ file prefixes
+import os
 def get_samples():
     return [os.path.basename(f).split("_")[0] for f in glob.glob(config['all_section_paths']['mapping_section']["path_to_fastq"] + "/*_R1*.fastq.gz")]
-
-# Create directories if they don't exist
-os.makedirs(config["all_section_paths"]["mapping_section"]["temp_dir"], exist_ok=True)
-os.makedirs(config["all_section_paths"]["mapping_section"]["output_dir"], exist_ok=True)
 
 # Rule all to specify final output files
 rule all:
     input:
-        expand(os.path.join(config["all_section_paths"]["mapping_section"]["output_dir"], "{sample}.sorted.bam.bai"), sample=get_samples()),
-		merged_gvcf_file=config["all_section_paths"]["variant_calling_section"]["output_dir"]+'/bcftools_merge_output_combined/nanomip_variants.gvcf.gz',
-		merged_vcf_file=config["all_section_paths"]["variant_calling_section"]["output_dir"]+'/bcftools_merge_output_combined/nanomip_variants.vcf.gz'
-
-
-"""
-_______________________________________________________________________________________________________________________________________
-
-Section 1) guppy_basecalling
-_______________________________________________________________________________________________________________________________________
-"""
+        expand(os.path.join(root_dir+'/mapped_bams/{sample}.sorted.bam.bai"), sample=get_samples()),
+		merged_gvcf_file=root_dir+'/vcfs/targeted_plus_normal_merged.gvcf.gz',
+		merged_vcf_file=root_dir+'/vcfs/targeted_plus_normal_merged.vcf.gz'
 
 """
 _______________________________________________________________________________________________________________________________________
 
-Section 2) cat_fastqs:
-_______________________________________________________________________________________________________________________________________
-"""
-
-"""
+Section 1) prep samples
 _______________________________________________________________________________________________________________________________________
 
-Section 3) get_barcode_numbers
-_______________________________________________________________________________________________________________________________________
 """
 
-"""
-_______________________________________________________________________________________________________________________________________
+rule cat_fastqs:
+	input:
+	output:
 
-Section 4) get_barcode_seqs
-_______________________________________________________________________________________________________________________________________
-"""
+rule get_barcode_numbers:
+	input:
+	output:
 
-"""
-_______________________________________________________________________________________________________________________________________
+rule get_barcode_seqs:
+	input:
+	output:
 
-Section 5) demux_samples
-_______________________________________________________________________________________________________________________________________
-"""
+rule demux_samples:
+	input:
+	output:
+
 
 """
 _______________________________________________________________________________________________________________________________________
@@ -102,8 +59,8 @@ rule map_to_main_genome:
 	Rule for aligning reads with minimap2 to .paf files
     """
 	input:
-		indexed_genome=genome_location+'/genome.fa',
-		sample_fastq=config['all_section_paths']['mapping_section']['fastq_dir'] + '/{sample}.fastq.gz'
+		indexed_genome=config['genome_directory']+'/genome.fa',
+		sample_fastq= + '/{sample}.fastq.gz'
 	output:
 		sample_paf=config["all_section_paths"]["mapping_section"]["output_dir"]+'/paf_main_files/{sample}.paf'
 	shell:

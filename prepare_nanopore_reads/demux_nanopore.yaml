@@ -1,5 +1,6 @@
 fast5_dir: /nfs/jbailey5/baileyweb/bailey_share/raw_data/231211_Mikalayi_4CAST/no_sample/20231211_0938_P2S-00515-B_PAU00945_34612358/fast5
 fastq_dir: /nfs/jbailey5/baileyweb/asimkin/junk_guppy
+catted_fastq: /nfs/jbailey5/baileyweb/asimkin/junk_guppy/catted_pass.fastq
 output_dir: test_output
 sam_folder: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/run_230508_mipstoNanopore_P2/map_to_bam/output_files/bam_mapped/sam_main_files # old contents - not used currently
 project_resources: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_project_resources/DR23K # old contents - not used currently
