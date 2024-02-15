@@ -14,7 +14,7 @@ rule run_basecaller:
 	params:
 		basecalled_fastq=config['fastq_dir']
 	output:
-		complete_status=config['fastq_dir']+'basecalling_completed.txt'
+		complete_status=config['fastq_dir']+'basecalling_completed.txt' # maybe don't want to write this to fastq directory since prefixes are pulled from fastq directory. Also should we put these in a temp or separate non-demuxed fastq directory and make a fastq directory for demuxed fastq with real sample prefixes for reading for mapping rules?
 	shell:
 		'''
 		jobid=$(sbatch --parsable scripts/guppy_basecaller.sh {input.fast5_directory} {params.basecalled_fastq})
@@ -36,8 +36,8 @@ rule run_basecaller:
 
 rule cat_files:
 	input:
-		basecalled_fastq=config['fastq_dir']+'/pass'
-		complete_status=config['fastq_dir']+'basecalling_completed.txt'
+		basecalled_fastq=config['fastq_dir']+'/pass',
+		complete_status=config['fastq_dir']+'basecalling_completed.txt' # add guppy finish check before running this rule - unless we implement {sample}fastq prefixes as input
 	output:
 		catted_unzipped_file=temp(config['catted_fastq']),
 		zipped_file=config['catted_fastq']+'.gz'
