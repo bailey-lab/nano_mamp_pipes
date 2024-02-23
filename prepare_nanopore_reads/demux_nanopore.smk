@@ -1,4 +1,4 @@
-configfile: 'mips_to_nanopore.yaml'
+configfile: 'demux_nanopore.yaml'
 
 rule run_basecaller:
 	'''
@@ -45,10 +45,11 @@ rule cat_files:
 		'''
 		scripts/alternative_cat.py
 		'''
-
+'''
 rule demux_files:
 	input:
 		zipped_file=config['catted_fastq']+'.gz',
 		sample_barcodes=config['sample_barcodes']
 	output:
 		demuxed_fastq_folder=config['demuxed_folder']
+'''
