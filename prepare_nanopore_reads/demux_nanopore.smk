@@ -16,12 +16,13 @@ rule run_basecaller:
 		config='dna_r10.4.1_e8.2_400bps_sup.cfg'
 	output:
 		complete_status='basecalling_completed.txt',
-		basecalled_fastq=config['fastq_dir']+'/pass'
+		basecalled_fastq=directory(config['fastq_dir']+'/pass')
 	resources:
 		platform='gpu',
 		mem_mb=48000,
 		nodes=8,
-		time_min=2880
+		time_min=2880,
+		extra_flags='--gres=gpu:1 --gres-flags=enforce-binding -N 1'
 	shell:
 		'''
 		bash scripts/guppy_basecaller2.sh {params.config} {input.fast5_directory} {params.basecalled_fastq}
@@ -31,13 +32,13 @@ rule run_basecaller:
 rule cat_files:
 	input:
 		basecalled_fastq=config['fastq_dir']+'/pass'
+	params:
+		catted_unzipped_file=config['catted_fastq']
 	output:
-		catted_unzipped_file=temp(config['catted_fastq']),
 		zipped_file=config['catted_fastq']+'.gz'
 	script:
-		'''
-		scripts/alternative_cat.py
-		'''
+		'scripts/alternative_cat.py'
+
 '''
 rule demux_files:
 	input:
