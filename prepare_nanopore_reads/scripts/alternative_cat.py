@@ -9,7 +9,7 @@ import os
 import gzip
 import subprocess
 
-input_dir=snakemake.input.basecalled_fastq
+input_dir=snakemake.params.basecalled_fastq
 output_file_name=snakemake.params.catted_unzipped_file
 
 output_file=open(output_file_name, 'w')
