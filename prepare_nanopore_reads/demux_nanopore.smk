@@ -60,6 +60,6 @@ rule demux_files:
 		-B {input.barcodes_dir}:/opt/resources \
 		-B {params.fastq_dir}:/opt/demuxing {input.elucidator_sif} \
 		elucidator extractByIlluminaAaptors --fastqgz /opt/demuxing/catted_pass.fastq.gz \
-		--overWriteDir --dout {output.demuxed_fastq_folder} \
+		--overWriteDir --dout /opt/demuxing/demuxed_fastq \
 		--illuminaBarcodeSampleSheet /opt/resources/{params.sample_barcodes}
 		'''
