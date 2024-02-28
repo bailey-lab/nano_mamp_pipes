@@ -6,9 +6,10 @@ rule all:
 
 rule run_basecaller:
 	'''
-	TODO: make it so this script only 'completes' (so that basecalling_
-	completed.txt is only touched) when every input fast5 has a	corresponding
-	fastq
+	TODO: make a version that runs each fast5 file separately, and make it so
+	this script only 'completes' when every input fast5 has status 'completed'
+	(current version is all or nothing - succeeds or needs to restart
+	basecalling from beginning
 	'''
 	input:
 		fast5_directory=config['fast5_dir']
@@ -16,23 +17,21 @@ rule run_basecaller:
 		basecalled_fastq=config['output_folder']+'/basecalling',
 		config='dna_r10.4.1_e8.2_400bps_sup.cfg'
 	output:
-		complete_status='basecalling_completed.txt',
-		basecalled_fastq=directory(config['output_folder']+'/basecalling/pass')
+		finished_telemetry=config['output_folder']+'/basecalling/sequencing_telemetry.js'
 	resources:
 		platform='gpu',
 		mem_mb=48000,
-		nodes=8,
+		cluster_threads=8,
 		time_min=2879,
 		extra_flags='--gres=gpu:1 --gres-flags=enforce-binding -N 1'
 	shell:
 		'''
 		bash scripts/guppy_basecaller2.sh {params.config} {input.fast5_directory} {params.basecalled_fastq}
-		touch basecalling_completed.txt
 		'''
 
 rule cat_files:
 	input:
-		basecalled_fastq=config['output_folder']+'/basecalling/pass'
+		finished_telemetry=config['output_folder']+'/basecalling/sequencing_telemetry.js'
 	params:
 		catted_unzipped_file=config['output_folder']+'/catted_pass.fastq'
 	output:
@@ -53,7 +52,8 @@ rule demux_files:
 	output:
 		demuxed_fastq_folder=directory(config['output_folder']+'/demuxed_fastq')
 	resources:
-		time_min=2879
+		time_min=2879,
+		mem_mb=32000
 	shell:
 		'''
 		singularity exec \
