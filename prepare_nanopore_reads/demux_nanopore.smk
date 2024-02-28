@@ -33,6 +33,7 @@ rule cat_files:
 	input:
 		finished_telemetry=config['output_folder']+'/basecalling/sequencing_telemetry.js'
 	params:
+		basecalled_fastq=config['output_folder']+'/basecalling/pass',
 		catted_unzipped_file=config['output_folder']+'/catted_pass.fastq'
 	output:
 		zipped_file=temp(config['output_folder']+'/catted_pass.fastq.gz')
