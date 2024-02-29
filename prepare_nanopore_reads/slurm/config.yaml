@@ -1,5 +1,5 @@
 jobs: 100
-cluster: "sbatch -t {resources.time_min} -p {resources.partition} {resources.extra_flags} --mem={resources.mem_mb} -n {resources.cluster_threads} --output={rule}/{rule}_{wildcards}_out --error={rule}/{rule}_{wildcards}_error"
+cluster: "sbatch -t {resources.time_min} -p {resources.partition} {resources.extra_flags} --mem={resources.mem_mb} -n {resources.cluster_threads} --output=cluster_logs/{rule}/{rule}_{wildcards}_out --error=cluster_logs/{rule}/{rule}_{wildcards}_error"
 default-resources: [cluster_threads=1, mem_mb=4000, time_min=120, partition=batch, extra_flags='']
 resources: [cluster_threads=200, mem_mb=1000000]
 keep-going: true
