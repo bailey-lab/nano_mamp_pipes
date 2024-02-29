@@ -15,7 +15,7 @@ rule run_basecaller:
 		fast5_directory=config['fast5_dir']
 	params:
 		basecalled_fastq=config['output_folder']+'/basecalling',
-		config='dna_r10.4.1_e8.2_400bps_sup.cfg'
+		config=config['nanopore_config_params']
 	output:
 		finished_telemetry=config['output_folder']+'/basecalling/sequencing_telemetry.js'
 	resources:
