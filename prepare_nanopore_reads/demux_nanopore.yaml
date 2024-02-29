@@ -1,12 +1,12 @@
-fast5_dir: /users/asimkin/scratch/prepping_nanopore/240213_Mikalayi_P2/no_sample/20240213_1140_P2S-00515-B_PAU31640_1fb1d321/fast5
-output_folder: /nfs/jbailey5/baileyweb/asimkin/tes_2017_mikalayi/4cast_nanopore/alec_240213_run_v2
+fast5_dir: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/toy_dataset/fast5
+output_folder: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/toy_dataset/read_prepping
 
 #this is the directory containing the sample barcodes - needed for singularity
 #bindings
-barcodes_dir: /nfs/jbailey5/baileyweb/bailey_share/raw_data/231211_Mikalayi_4CAST/no_sample/20231211_0938_P2S-00515-B_PAU00945_34612358/alfred_demuxing_scripts
+barcodes_dir: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/toy_dataset
 
 #this is the file containing the sample barcodes (used for demultiplexing)
-sample_barcodes: Mikalayi_primer_seqs.tsv
+sample_barcodes: mips_to_nanopore_primer_seqs.tsv
 
 #this is where the elucidator sif file is located
 elucidator_sif: /nfs/jbailey5/baileyweb/bailey_share/bin/elucidator_23-07-19.sif
