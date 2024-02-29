@@ -19,7 +19,7 @@ rule run_basecaller:
 	output:
 		finished_telemetry=config['output_folder']+'/basecalling/sequencing_telemetry.js'
 	resources:
-		platform='gpu',
+		partition='gpu',
 		mem_mb=48000,
 		cluster_threads=8,
 		time_min=2879,
