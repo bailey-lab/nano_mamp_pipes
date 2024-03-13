@@ -1,6 +1,6 @@
-fast5_dir: /nfs/jbailey5/baileyweb/bailey_share/raw_data/231211_Mikalayi_4CAST/no_sample/20231211_0938_P2S-00515-B_PAU00945_34612358/fast5
-fastq_dir: /nfs/jbailey5/baileyweb/asimkin/junk_guppy
-output_dir: test_output
-sam_folder: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/run_230508_mipstoNanopore_P2/map_to_bam/output_files/bam_mapped/sam_main_files # old contents - not used currently
-project_resources: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_project_resources/DR23K # old contents - not used currently
-genome_directory: /path/to/genome
+fastq_dir: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/prepped_reads/demuxed_fastq/fastq
+output_dir: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check
+project_resources: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/bams_to_vcf/resources # later on # find what probe set from Neeva # /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_project_resources/DR23K # old contents - not used currently
+genome_directory: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes
+clair3_sif_path: /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+src_path: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/src # directory for storing all .py scripts called from any of the smks in the pipeline.

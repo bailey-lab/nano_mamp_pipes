@@ -1,0 +1,2 @@
+SyntaxError in file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore.smk, line 272:
+Unexpected keyword output_dir in rule definition (mips_to_nanopore.smk, line 272)
