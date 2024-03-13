@@ -1,0 +1,9 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1071162
+##  Job Name : snakejob.bcftools_index_vcf_raw.625.sh
+##  Nodelist : node1738
+##      CPUs : 1
+##  Mem/Node : 4000 MB
+## Directory : /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis
+##   Job Started : Wed Mar 13 11:36:34 AM EDT 2024
+###############################################################################

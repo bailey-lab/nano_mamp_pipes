@@ -1,0 +1,292 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1070844
+##  Job Name : snakejob.run_clair3_raw.404.sh
+##  Nodelist : node1740
+##      CPUs : 1
+##  Mem/Node : 4000 MB
+## Directory : /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis
+##   Job Started : Wed Mar 13 11:31:18 AM EDT 2024
+###############################################################################
+Processing sample: RW016016-068068-ArtR22RW-1
+[INFO] CLAIR3 VERSION: v1.0.5
+[INFO] BAM FILE PATH: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-068068-ArtR22RW-1.sorted.bam
+[INFO] REFERENCE FILE PATH: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa
+[INFO] MODEL PATH: /opt/models/r941_prom_sup_g5014
+[INFO] OUTPUT FOLDER: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw
+[INFO] PLATFORM: ont
+[INFO] THREADS: 1
+[INFO] BED FILE PATH: EMPTY
+[INFO] VCF FILE PATH: EMPTY
+[INFO] CONTIGS: EMPTY
+[INFO] CONDA PREFIX: /users/gtollefs/mambaforge/envs/snakemake
+[INFO] SAMTOOLS PATH: samtools
+[INFO] PYTHON PATH: python3
+[INFO] PYPY PATH: pypy3
+[INFO] PARALLEL PATH: parallel
+[INFO] WHATSHAP PATH: whatshap
+[INFO] LONGPHASE PATH: EMPTY
+[INFO] CHUNK SIZE: 5000000
+[INFO] FULL ALIGN PROPORTION: 0.7
+[INFO] FULL ALIGN REFERENCE PROPORTION: 0.1
+[INFO] PHASING PROPORTION: 0.8
+[INFO] MINIMUM MQ: 5
+[INFO] MINIMUM COVERAGE: 2
+[INFO] SNP AF THRESHOLD: 0.001
+[INFO] INDEL AF THRESHOLD: 0.001
+[INFO] BASE ERROR IN GVCF: 0.001
+[INFO] GQ BIN SIZE IN GVCF: 5
+[INFO] ENABLE FILEUP ONLY CALLING: False
+[INFO] ENABLE FAST MODE CALLING: False
+[INFO] ENABLE CALLING SNP CANDIDATES ONLY: False
+[INFO] ENABLE PRINTING REFERENCE CALLS: True
+[INFO] ENABLE OUTPUT GVCF: True
+[INFO] ENABLE HAPLOID PRECISE MODE: False
+[INFO] ENABLE HAPLOID SENSITIVE MODE: False
+[INFO] ENABLE INCLUDE ALL CTGS CALLING: True
+[INFO] ENABLE NO PHASING FOR FULL ALIGNMENT: True
+[INFO] ENABLE REMOVING INTERMEDIATE FILES: False
+[INFO] ENABLE LONGPHASE FOR INTERMEDIATE VCF PHASING: False
+[INFO] ENABLE PHASING FINAL VCF OUTPUT USING WHATSHAP: False
+[INFO] ENABLE PHASING FINAL VCF OUTPUT USING LONGPHASE: False
+[INFO] ENABLE HAPLOTAGGING FINAL BAM: False
+[INFO] ENABLE LONG INDEL CALLING: False
+[INFO] ENABLE C_IMPLEMENT: True
+
++ /opt/bin/scripts/clair3_c_impl.sh --bam_fn /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-068068-ArtR22RW-1.sorted.bam --ref_fn /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa --threads 1 --model_path /opt/models/r941_prom_sup_g5014 --platform ont --output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw --bed_fn=EMPTY --vcf_fn=EMPTY --ctg_name=EMPTY --sample_name=RW016016-068068-ArtR22RW-1 --chunk_num=0 --chunk_size=5000000 --samtools=samtools --python=python3 --pypy=pypy3 --parallel=parallel --whatshap=whatshap --qual=2 --var_pct_full=0.7 --ref_pct_full=0.1 --var_pct_phasing=0.8 --snp_min_af=0.001 --indel_min_af=0.001 --min_mq=5 --min_coverage=2 --min_contig_size=0 --pileup_only=False --gvcf=True --base_err=0.001 --gq_bin_size=5 --fast_mode=False --call_snp_only=False --print_ref_calls=True --haploid_precise=False --haploid_sensitive=False --include_all_ctgs=True --no_phasing_for_fa=True --pileup_model_prefix=pileup --fa_model_prefix=full_alignment --remove_intermediate_dir=False --enable_phasing=False --enable_long_indel=False --keep_iupac_bases=False --use_gpu=False --longphase_for_phasing=False --longphase=EMPTY --use_whatshap_for_intermediate_phasing=True --use_longphase_for_intermediate_phasing=False --use_whatshap_for_final_output_phasing=False --use_longphase_for_final_output_phasing=False --use_whatshap_for_final_output_haplotagging=False
+
+[INFO] Check environment variables
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/log
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/pileup_output
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/merge_output
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/phase_output
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/gvcf_tmp_output
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/phase_output/phase_vcf
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/phase_output/phase_bam
+[INFO] Create folder /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/candidate_bed
+[INFO] --include_all_ctgs enabled
+[93m[WARNING] Contig name chr3 provided but no mapped reads in BAM, skip![0m
+[93m[WARNING] Contig name chrP provided but no mapped reads in BAM, skip![0m
+[INFO] Call variant in contigs: chr1 chr2 chr4 chr5 chr6 chr7 chr8 chr9 chr10 chr11 chr12 chr13 chr14 chrM
+[INFO] Chunk number for each contig: 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+[INFO] 1/7 Call variants using pileup model
+Calling variants ...
+[faidx] Truncated sequence: chr1:1-641851
+Total processed positions in chr1 (chunk 1/1) : 0
+Total time elapsed: 4.70 s
+[INFO] No vcf output for file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/pileup_output/pileup_chr1_1.vcf, remove empty file
+Calling variants ...
+[faidx] Truncated sequence: chr2:1-948102
+Total processed positions in chr2 (chunk 1/1) : 0
+Total time elapsed: 6.77 s
+[INFO] No vcf output for file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/pileup_output/pileup_chr2_1.vcf, remove empty file
+Calling variants ...
+[faidx] Truncated sequence: chr4:1-1201490
+Total processed positions in chr4 (chunk 1/1) : 1738
+Total time elapsed: 13.20 s
+Calling variants ...
+[faidx] Truncated sequence: chr5:1-1344557
+Total processed positions in chr5 (chunk 1/1) : 4178
+Total time elapsed: 15.81 s
+Calling variants ...
+[faidx] Truncated sequence: chr6:1-1419242
+Total processed positions in chr6 (chunk 1/1) : 1969
+Total time elapsed: 14.53 s
+Calling variants ...
+[faidx] Truncated sequence: chr7:1-1446207
+Total processed positions in chr7 (chunk 1/1) : 2238
+Total time elapsed: 14.77 s
+Calling variants ...
+[faidx] Truncated sequence: chr8:1-1473805
+Total processed positions in chr8 (chunk 1/1) : 2239
+Total time elapsed: 14.87 s
+Calling variants ...
+[faidx] Truncated sequence: chr9:1-1542735
+Total processed positions in chr9 (chunk 1/1) : 0
+Total time elapsed: 10.48 s
+[INFO] No vcf output for file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/pileup_output/pileup_chr9_1.vcf, remove empty file
+Calling variants ...
+[faidx] Truncated sequence: chr10:1-1688656
+Total processed positions in chr10 (chunk 1/1) : 0
+Total time elapsed: 11.27 s
+[INFO] No vcf output for file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/pileup_output/pileup_chr10_1.vcf, remove empty file
+Calling variants ...
+[faidx] Truncated sequence: chr11:1-2039340
+Total processed positions in chr11 (chunk 1/1) : 420
+Total time elapsed: 16.79 s
+Calling variants ...
+[faidx] Truncated sequence: chr12:1-2272494
+Total processed positions in chr12 (chunk 1/1) : 3066
+Total time elapsed: 21.15 s
+Calling variants ...
+[faidx] Truncated sequence: chr13:1-2926236
+Total processed positions in chr13 (chunk 1/1) : 2146
+Total time elapsed: 24.79 s
+Calling variants ...
+[faidx] Truncated sequence: chr14:1-3292936
+Total processed positions in chr14 (chunk 1/1) : 2711
+Total time elapsed: 27.39 s
+Calling variants ...
+[faidx] Truncated sequence: chrM:1-6967
+Total processed positions in chrM (chunk 1/1) : 1183
+Total time elapsed: 4.32 s
+
+real	3m59.307s
+user	3m33.543s
+sys	0m10.771s
+[INFO] 2/7 No phasing for full alignment calling
+
+[INFO] 5/7 Select candidates for full-alignment calling
+[INFO] Set variants quality cutoff 6.0
+[INFO] Set reference calls quality cutoff 7.0
+[93m[WARNING] Cannot find any low-quality 0/0, 0/1 or 1/1 variant in pileup output in contig chr1[0m
+[93m[WARNING] Copying pileup.vcf.gz to /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/merge_output.vcf.gz[0m
+[INFO] Low quality reference calls to be processed in chr1: 0
+[INFO] Low quality variants to be processed in chr1: 0
+[93m[WARNING] Cannot find any low-quality 0/0, 0/1 or 1/1 variant in pileup output in contig chr2[0m
+[93m[WARNING] Copying pileup.vcf.gz to /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/merge_output.vcf.gz[0m
+[INFO] Low quality reference calls to be processed in chr2: 0
+[INFO] Low quality variants to be processed in chr2: 0
+[INFO] Low quality reference calls to be processed in chr4: 166
+[INFO] Low quality variants to be processed in chr4: 7
+[INFO] Low quality reference calls to be processed in chr5: 371
+[INFO] Low quality variants to be processed in chr5: 18
+[INFO] Low quality reference calls to be processed in chr6: 207
+[INFO] Low quality variants to be processed in chr6: 14
+[INFO] Low quality reference calls to be processed in chr7: 307
+[INFO] Low quality variants to be processed in chr7: 32
+[INFO] Low quality reference calls to be processed in chr8: 242
+[INFO] Low quality variants to be processed in chr8: 6
+[93m[WARNING] Cannot find any low-quality 0/0, 0/1 or 1/1 variant in pileup output in contig chr9[0m
+[93m[WARNING] Copying pileup.vcf.gz to /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/merge_output.vcf.gz[0m
+[INFO] Low quality reference calls to be processed in chr9: 0
+[INFO] Low quality variants to be processed in chr9: 0
+[93m[WARNING] Cannot find any low-quality 0/0, 0/1 or 1/1 variant in pileup output in contig chr10[0m
+[93m[WARNING] Copying pileup.vcf.gz to /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/merge_output.vcf.gz[0m
+[INFO] Low quality reference calls to be processed in chr10: 0
+[INFO] Low quality variants to be processed in chr10: 0
+[INFO] Low quality reference calls to be processed in chr11: 22
+[INFO] Low quality variants to be processed in chr11: 0
+[INFO] Low quality reference calls to be processed in chr12: 386
+[INFO] Low quality variants to be processed in chr12: 23
+[INFO] Low quality reference calls to be processed in chr13: 136
+[INFO] Low quality variants to be processed in chr13: 5
+[INFO] Low quality reference calls to be processed in chr14: 192
+[INFO] Low quality variants to be processed in chr14: 6
+[INFO] Low quality reference calls to be processed in chrM: 140
+[INFO] Low quality variants to be processed in chrM: 6
+
+real	0m2.873s
+user	0m1.820s
+sys	0m0.424s
+
+[INFO] 6/7 Call low-quality variants using full-alignment model
+Calling variants ...
+Total processed positions in  : 0
+[93m[WARNING] No full-alignment output for file //nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/full_alignment_.vcf[0m
+Total time elapsed: 0.00 s
+[INFO] No vcf output for file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/full_alignment_.vcf, remove empty file
+Calling variants ...
+Total processed positions in  : 0
+[93m[WARNING] No full-alignment output for file //nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/full_alignment_.vcf[0m
+Total time elapsed: 0.00 s
+[INFO] No vcf output for file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/full_alignment_.vcf, remove empty file
+Calling variants ...
+Total processed positions in chr11 (chunk 1/1) : 22
+Total time elapsed: 1.14 s
+Calling variants ...
+Total processed positions in chr12 (chunk 1/1) : 409
+Total time elapsed: 3.24 s
+Calling variants ...
+Total processed positions in chr13 (chunk 1/1) : 141
+Total time elapsed: 1.58 s
+Calling variants ...
+Total processed positions in chr14 (chunk 1/1) : 198
+Total time elapsed: 1.95 s
+Calling variants ...
+Total processed positions in  : 0
+[93m[WARNING] No full-alignment output for file //nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/full_alignment_.vcf[0m
+Total time elapsed: 0.00 s
+[INFO] No vcf output for file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/full_alignment_.vcf, remove empty file
+Calling variants ...
+Total processed positions in chr4 (chunk 1/1) : 173
+Total time elapsed: 1.73 s
+Calling variants ...
+Total processed positions in chr5 (chunk 1/1) : 389
+Total time elapsed: 3.01 s
+Calling variants ...
+Total processed positions in chr6 (chunk 1/1) : 221
+Total time elapsed: 2.17 s
+Calling variants ...
+Total processed positions in chr7 (chunk 1/1) : 339
+Total time elapsed: 2.71 s
+Calling variants ...
+Total processed positions in chr8 (chunk 1/1) : 248
+Total time elapsed: 2.29 s
+Calling variants ...
+Total processed positions in  : 0
+[93m[WARNING] No full-alignment output for file //nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/full_alignment_.vcf[0m
+Total time elapsed: 0.00 s
+[INFO] No vcf output for file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/tmp/full_alignment_output/full_alignment_.vcf, remove empty file
+Calling variants ...
+Total processed positions in chrM (chunk 1/1) : 146
+Total time elapsed: 1.76 s
+
+real	0m53.800s
+user	0m41.697s
+sys	0m3.954s
+
+[INFO] 7/7 Merge pileup VCF and full-alignment VCF
+[INFO] Pileup variants processed in chr1: 0
+[INFO] Full-alignment variants processed in chr1: 0
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr2: 0
+[INFO] Full-alignment variants processed in chr2: 0
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr4: 1565
+[INFO] Full-alignment variants processed in chr4: 173
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr5: 3789
+[INFO] Full-alignment variants processed in chr5: 389
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr6: 1748
+[INFO] Full-alignment variants processed in chr6: 221
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr7: 1899
+[INFO] Full-alignment variants processed in chr7: 339
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr8: 1991
+[INFO] Full-alignment variants processed in chr8: 248
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr9: 0
+[INFO] Full-alignment variants processed in chr9: 0
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr10: 0
+[INFO] Full-alignment variants processed in chr10: 0
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr11: 398
+[INFO] Full-alignment variants processed in chr11: 22
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr12: 2657
+[INFO] Full-alignment variants processed in chr12: 409
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr13: 2005
+[INFO] Full-alignment variants processed in chr13: 141
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chr14: 2513
+[INFO] Full-alignment variants processed in chr14: 198
+[INFO] Merge variants and non-variants to GVCF
+[INFO] Pileup variants processed in chrM: 1037
+[INFO] Full-alignment variants processed in chrM: 146
+[INFO] Merge variants and non-variants to GVCF
+
+real	0m5.036s
+user	0m3.294s
+sys	0m0.882s
+[INFO] Need some time to compress and index GVCF file...
+
+[INFO] Finish calling, output file: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_raw/merge_output.vcf.gz
+
+real	5m4.932s
+user	4m21.687s
+sys	0m16.603s

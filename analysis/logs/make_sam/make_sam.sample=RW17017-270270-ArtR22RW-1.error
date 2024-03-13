@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, nodes=1, time_min=120
+Select jobs to execute...
+
+[Wed Mar 13 11:29:38 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/prepped_reads/demuxed_fastq/fastq/RW17017-270270-ArtR22RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW17017-270270-ArtR22RW-1.sam
+    jobid: 0
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW17017-270270-ArtR22RW-1.sam
+    wildcards: sample=RW17017-270270-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=/tmp, nodes=1, time_min=120
+
+[M::mm_idx_gen::0.795*0.90] collected minimizers
+[M::mm_idx_gen::1.136*0.93] sorted minimizers
+[M::main::1.136*0.93] loaded/built the index for 16 target sequence(s)
+[M::mm_mapopt_update::1.136*0.93] mid_occ = 1000
+[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 16
+[M::mm_idx_stat::1.174*0.93] distinct minimizers: 3255496 (95.38% are singletons); average occurrences: 1.261; average spacing: 5.684; total length: 23332831
+[M::worker_pipeline::7.547*0.98] mapped 104724 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -ax sr -o /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW17017-270270-ArtR22RW-1.sam /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/prepped_reads/demuxed_fastq/fastq/RW17017-270270-ArtR22RW-1.fastq.gz
+[M::main] Real time: 7.564 sec; CPU: 7.440 sec; Peak RSS: 0.261 GB
+[Wed Mar 13 11:29:46 2024]
+Finished job 0.
+1 of 1 steps (100%) done

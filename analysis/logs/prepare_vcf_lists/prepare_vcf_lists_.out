@@ -1,0 +1,12 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1070686
+##  Job Name : snakejob.prepare_vcf_lists.639.sh
+##  Nodelist : node1721
+##      CPUs : 1
+##  Mem/Node : 4000 MB
+## Directory : /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis
+##   Job Started : Wed Mar 13 11:29:33 AM EDT 2024
+###############################################################################
+VCF lists prepared: 0 raw and 0 targets
+Raw VCF list saved to: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt
+Targets VCF list saved to: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt
