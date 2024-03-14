@@ -1,0 +1,646 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                    count    min threads    max threads
+-----------------------------------  -------  -------------  -------------
+all                                        1              1              1
+bcftools_index_gvcf_raw                   70              1              1
+bcftools_index_gvcf_targets               70              1              1
+bcftools_index_merged_raw_gvcf             1              1              1
+bcftools_index_merged_raw_vcf              1              1              1
+bcftools_index_merged_targets_gvcf         1              1              1
+bcftools_index_merged_targets_vcf          1              1              1
+bcftools_index_vcf_raw                    70              1              1
+bcftools_index_vcf_targets                70              1              1
+bcftools_merge_raw_and_targets_gvcf        1              1              1
+bcftools_merge_raw_and_targets_vcf         1              1              1
+bcftools_merge_raw_gvcf                    1              1              1
+bcftools_merge_raw_vcf                     1              1              1
+bcftools_merge_targets_gvcf                1              1              1
+bcftools_merge_targets_vcf                 1              1              1
+index_bam                                 70              1              1
+make_bam                                  70              1              1
+make_sam                                  70              1              1
+prepare_gvcf_lists                         1              1              1
+prepare_vcf_lists                          1              1              1
+run_clair3_raw                            70              1              1
+run_clair3_targets                        70              1              1
+sort_bam                                  70              1              1
+total                                    713              1              1
+
+Select jobs to execute...
+
+[Wed Mar 13 18:12:24 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/3d7-1000.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-1000.sam
+    jobid: 4
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-1000.sam; Set of input files has changed since last execution
+    wildcards: sample=3d7-1000
+    resources: tmpdir=/tmp
+
+
+[Wed Mar 13 18:12:24 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW015015-043043-ArtR22RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-043043-ArtR22RW-1.sam
+    jobid: 224
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-043043-ArtR22RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW015015-043043-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+
+[Wed Mar 13 18:12:24 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW015015-075075-ArtR22RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam
+    jobid: 228
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW015015-075075-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+
+[Wed Mar 13 18:12:24 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW-17017-599599-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-599599-ArtR23RW-1.sam
+    jobid: 144
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-599599-ArtR23RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW-17017-599599-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:25 2024]
+Finished job 224.
+1 of 713 steps (0.1%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:26 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-043043-ArtR22RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.bam
+    jobid: 223
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-043043-ArtR22RW-1.sam
+    wildcards: sample=RW015015-043043-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:26 2024]
+Finished job 223.
+2 of 713 steps (0.3%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-043043-ArtR22RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:26 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam
+    jobid: 222
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.bam
+    wildcards: sample=RW015015-043043-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:26 2024]
+Finished job 222.
+3 of 713 steps (0.4%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:26 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/3d7-2000.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-2000.sam
+    jobid: 8
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-2000.sam; Set of input files has changed since last execution
+    wildcards: sample=3d7-2000
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:26 2024]
+Finished job 4.
+4 of 713 steps (1%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:26 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-1000.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-1000.bam
+    jobid: 3
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-1000.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-1000.sam
+    wildcards: sample=3d7-1000
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:26 2024]
+Finished job 3.
+5 of 713 steps (1%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-1000.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:27 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-1000.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-1000.sorted.bam
+    jobid: 2
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-1000.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-1000.bam
+    wildcards: sample=3d7-1000
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:27 2024]
+Finished job 2.
+6 of 713 steps (1%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-1000.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:27 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW-17017-510510-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-510510-ArtR23RW-1.sam
+    jobid: 120
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-510510-ArtR23RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW-17017-510510-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:27 2024]
+Finished job 144.
+7 of 713 steps (1%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:27 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-599599-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-599599-ArtR23RW-1.bam
+    jobid: 143
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-599599-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-599599-ArtR23RW-1.sam
+    wildcards: sample=RW-17017-599599-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:28 2024]
+Finished job 228.
+8 of 713 steps (1%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:28 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam
+    jobid: 227
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam
+    wildcards: sample=RW015015-075075-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:28 2024]
+Finished job 143.
+9 of 713 steps (1%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-599599-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:28 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-599599-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam
+    jobid: 142
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-599599-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-599599-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:29 2024]
+Finished job 8.
+10 of 713 steps (1%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:29 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-2000.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.bam
+    jobid: 7
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-2000.sam
+    wildcards: sample=3d7-2000
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:29 2024]
+Finished job 142.
+11 of 713 steps (2%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-599599-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:29 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW-17017-502502-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-502502-ArtR23RW-1.sam
+    jobid: 112
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-502502-ArtR23RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW-17017-502502-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:29 2024]
+Finished job 227.
+12 of 713 steps (2%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:29 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam
+    jobid: 226
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam
+    wildcards: sample=RW015015-075075-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:29 2024]
+Finished job 7.
+13 of 713 steps (2%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/3d7-2000.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:29 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.sorted.bam
+    jobid: 6
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.bam
+    wildcards: sample=3d7-2000
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:30 2024]
+Finished job 6.
+14 of 713 steps (2%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:30 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.sorted.bam.bai
+    jobid: 5
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.sorted.bam
+    wildcards: sample=3d7-2000
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:30 2024]
+Finished job 5.
+15 of 713 steps (2%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:30 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW-13013-303303-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-13013-303303-ArtR23RW-1.sam
+    jobid: 32
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-13013-303303-ArtR23RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW-13013-303303-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:30 2024]
+Finished job 226.
+16 of 713 steps (2%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:30 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW-17017-563563-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-563563-ArtR23RW-1.sam
+    jobid: 132
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-563563-ArtR23RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW-17017-563563-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:31 2024]
+Finished job 120.
+17 of 713 steps (2%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:31 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-510510-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.bam
+    jobid: 119
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-510510-ArtR23RW-1.sam
+    wildcards: sample=RW-17017-510510-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:32 2024]
+Finished job 119.
+18 of 713 steps (3%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-510510-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:32 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam
+    jobid: 118
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-510510-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:33 2024]
+Finished job 112.
+19 of 713 steps (3%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:33 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-502502-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-502502-ArtR23RW-1.bam
+    jobid: 111
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-502502-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-502502-ArtR23RW-1.sam
+    wildcards: sample=RW-17017-502502-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:33 2024]
+Finished job 118.
+20 of 713 steps (3%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:33 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW013013-262262-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW013013-262262-ArtR23RW-1.sam
+    jobid: 200
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW013013-262262-ArtR23RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW013013-262262-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:34 2024]
+Finished job 132.
+21 of 713 steps (3%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:35 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-563563-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.bam
+    jobid: 131
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-563563-ArtR23RW-1.sam
+    wildcards: sample=RW-17017-563563-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:35 2024]
+Finished job 111.
+22 of 713 steps (3%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-502502-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:35 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-502502-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-502502-ArtR23RW-1.sorted.bam
+    jobid: 110
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-502502-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-502502-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-502502-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:35 2024]
+Finished job 32.
+23 of 713 steps (3%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:35 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-13013-303303-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam
+    jobid: 31
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-13013-303303-ArtR23RW-1.sam
+    wildcards: sample=RW-13013-303303-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:35 2024]
+Finished job 131.
+24 of 713 steps (3%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-563563-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:35 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam
+    jobid: 130
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-563563-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:35 2024]
+Finished job 110.
+25 of 713 steps (4%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-502502-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:35 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam.bai
+    jobid: 117
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-510510-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:35 2024]
+Finished job 31.
+26 of 713 steps (4%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-13013-303303-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:36 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam
+    jobid: 30
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam
+    wildcards: sample=RW-13013-303303-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:36 2024]
+Finished job 117.
+27 of 713 steps (4%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:36 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW-17017-496496-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-496496-ArtR23RW-1.sam
+    jobid: 108
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-496496-ArtR23RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW-17017-496496-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:36 2024]
+Finished job 130.
+28 of 713 steps (4%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:36 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW17017-270270-ArtR22RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW17017-270270-ArtR22RW-1.sam
+    jobid: 256
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW17017-270270-ArtR22RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW17017-270270-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:37 2024]
+Finished job 30.
+29 of 713 steps (4%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:37 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam.bai
+    jobid: 221
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam
+    wildcards: sample=RW015015-043043-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:37 2024]
+Finished job 221.
+30 of 713 steps (4%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:37 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq/RW016016-067067-ArtR22RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW016016-067067-ArtR22RW-1.sam
+    jobid: 240
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW016016-067067-ArtR22RW-1.sam; Set of input files has changed since last execution
+    wildcards: sample=RW016016-067067-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:39 2024]
+Finished job 200.
+31 of 713 steps (4%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:39 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW013013-262262-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW013013-262262-ArtR23RW-1.bam
+    jobid: 199
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW013013-262262-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW013013-262262-ArtR23RW-1.sam
+    wildcards: sample=RW013013-262262-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:39 2024]
+Finished job 108.
+32 of 713 steps (4%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:39 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-496496-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.bam
+    jobid: 107
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-496496-ArtR23RW-1.sam
+    wildcards: sample=RW-17017-496496-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:40 2024]
+Finished job 107.
+33 of 713 steps (5%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW-17017-496496-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:40 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam
+    jobid: 106
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-496496-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:41 2024]
+Finished job 199.
+34 of 713 steps (5%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW013013-262262-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:41 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW013013-262262-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam
+    jobid: 198
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW013013-262262-ArtR23RW-1.bam
+    wildcards: sample=RW013013-262262-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:41 2024]
+Finished job 106.
+35 of 713 steps (5%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:41 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam.bai
+    jobid: 129
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-563563-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:41 2024]
+Finished job 240.
+36 of 713 steps (5%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:41 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW016016-067067-ArtR22RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-067067-ArtR22RW-1.bam
+    jobid: 239
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-067067-ArtR22RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW016016-067067-ArtR22RW-1.sam
+    wildcards: sample=RW016016-067067-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:41 2024]
+Finished job 129.
+37 of 713 steps (5%) done
+Select jobs to execute...
+
+[Wed Mar 13 18:12:41 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW-17017-496496-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW-17017-496496-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 477
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW-17017-496496-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW-17017-496496-ArtR23RW-1_targets/merge_output.gvcf.gz; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-496496-ArtR23RW-1
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 18:12:42 2024]
+Finished job 239.
+38 of 713 steps (5%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/sam_files/RW016016-067067-ArtR22RW-1.sam.
+Select jobs to execute...
+
+[Wed Mar 13 18:12:42 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-067067-ArtR22RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-067067-ArtR22RW-1.sorted.bam
+    jobid: 238
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-067067-ArtR22RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-067067-ArtR22RW-1.bam
+    wildcards: sample=RW016016-067067-ArtR22RW-1
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule run_clair3_targets in file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore.smk, line 178:
+Job 477  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW-17017-496496-ArtR23RW-1_targets/merge_output.vcf.gz
+/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/RW-17017-496496-ArtR23RW-1_targets/merge_output.gvcf.gz
+[Wed Mar 13 18:12:47 2024]
+Finished job 198.
+39 of 713 steps (5%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW013013-262262-ArtR23RW-1.bam.
+[Wed Mar 13 18:12:47 2024]
+Finished job 256.
+40 of 713 steps (6%) done
+[Wed Mar 13 18:12:47 2024]
+Finished job 238.
+41 of 713 steps (6%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/mapping/bam_files/RW016016-067067-ArtR22RW-1.bam.
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-03-13T181222.968867.snakemake.log

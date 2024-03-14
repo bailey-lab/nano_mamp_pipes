@@ -1,0 +1,45 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Provided resources: nodes=200, mem_mb=1000000
+Job stats:
+job                                    count    min threads    max threads
+-----------------------------------  -------  -------------  -------------
+all                                        1              1              1
+bcftools_index_merged_raw_gvcf             1              1              1
+bcftools_index_merged_raw_vcf              1              1              1
+bcftools_index_merged_targets_gvcf         1              1              1
+bcftools_index_merged_targets_vcf          1              1              1
+bcftools_merge_raw_and_targets_gvcf        1              1              1
+bcftools_merge_raw_and_targets_vcf         1              1              1
+bcftools_merge_raw_gvcf                    1              1              1
+bcftools_merge_raw_vcf                     1              1              1
+bcftools_merge_targets_gvcf                1              1              1
+bcftools_merge_targets_vcf                 1              1              1
+prepare_gvcf_lists                         1              1              1
+prepare_vcf_lists                          1              1              1
+total                                     13              1              1
+
+Select jobs to execute...
+
+[Wed Mar 13 16:43:35 2024]
+rule prepare_gvcf_lists:
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_raw.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_targets.txt
+    jobid: 3
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_targets.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_raw.txt
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 3 with external jobid 'Submitted batch job 1076461'.
+
+[Wed Mar 13 16:43:35 2024]
+rule prepare_vcf_lists:
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt
+    jobid: 9
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 9 with external jobid 'Submitted batch job 1076462'.
+Waiting at most 60 seconds for missing files.
+Terminating processes on user request, this might take some time.
+No --cluster-cancel given. Will exit after finishing currently running jobs.
+Cancelling snakemake on user request.

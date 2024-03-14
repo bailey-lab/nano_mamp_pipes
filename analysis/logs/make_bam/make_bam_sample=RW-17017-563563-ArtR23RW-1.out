@@ -1,9 +1,0 @@
-## SLURM PROLOG ###############################################################
-##    Job ID : 1070733
-##  Job Name : snakejob.make_bam.131.sh
-##  Nodelist : node1709
-##      CPUs : 1
-##  Mem/Node : 4000 MB
-## Directory : /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis
-##   Job Started : Wed Mar 13 11:30:33 AM EDT 2024
-###############################################################################

@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in rule all in file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_alignment.smk, line 23:
+Wildcards in input files cannot be determined from output files:
+'sample'
