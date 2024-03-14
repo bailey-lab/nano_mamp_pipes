@@ -8327,3 +8327,6 @@ Finished job 335.
 [Wed Mar 13 11:38:40 2024]
 Finished job 587.
 466 of 713 steps (65%) done
+Terminating processes on user request, this might take some time.
+No --cluster-cancel given. Will exit after finishing currently running jobs.
+Cancelling snakemake on user request.

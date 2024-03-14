@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Provided resources: nodes=200, mem_mb=1000000
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+total        1              1              1
+
+Select jobs to execute...
+
+[Wed Mar 13 18:05:09 2024]
+localrule all:
+    jobid: 0
+    reason: Rules with neither input nor output files are always executed.
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=/tmp, nodes=1, time_min=120
+
+[Wed Mar 13 18:05:09 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-03-13T180508.980360.snakemake.log

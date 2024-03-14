@@ -1,0 +1,138 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                    count    min threads    max threads
+-----------------------------------  -------  -------------  -------------
+all                                        1              1              1
+bcftools_index_merged_raw_gvcf             1              1              1
+bcftools_index_merged_raw_vcf              1              1              1
+bcftools_index_merged_targets_gvcf         1              1              1
+bcftools_index_merged_targets_vcf          1              1              1
+bcftools_merge_raw_and_targets_gvcf        1              1              1
+bcftools_merge_raw_and_targets_vcf         1              1              1
+bcftools_merge_raw_gvcf                    1              1              1
+bcftools_merge_raw_vcf                     1              1              1
+bcftools_merge_targets_gvcf                1              1              1
+bcftools_merge_targets_vcf                 1              1              1
+prepare_gvcf_lists                         1              1              1
+prepare_vcf_lists                          1              1              1
+total                                     13              1              1
+
+Select jobs to execute...
+
+[Wed Mar 13 17:38:22 2024]
+rule prepare_vcf_lists:
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt
+    jobid: 9
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt; Code has changed since last execution
+    resources: tmpdir=/tmp
+
+
+[Wed Mar 13 17:38:22 2024]
+rule prepare_gvcf_lists:
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_raw.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_targets.txt
+    jobid: 3
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_targets.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_raw.txt; Code has changed since last execution
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 17:38:22 2024]
+Finished job 9.
+1 of 13 steps (8%) done
+Select jobs to execute...
+
+[Wed Mar 13 17:38:22 2024]
+rule bcftools_merge_raw_vcf:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.vcf.gz
+    jobid: 8
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.vcf.gz; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt
+    resources: tmpdir=/tmp
+
+
+[Wed Mar 13 17:38:22 2024]
+rule bcftools_merge_targets_vcf:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.vcf.gz
+    jobid: 10
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.vcf.gz; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 17:38:22 2024]
+Finished job 3.
+2 of 13 steps (15%) done
+Select jobs to execute...
+
+[Wed Mar 13 17:38:22 2024]
+rule bcftools_merge_raw_gvcf:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_raw.txt
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.gvcf.gz
+    jobid: 2
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.gvcf.gz; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_raw.txt
+    resources: tmpdir=/tmp
+
+
+[Wed Mar 13 17:38:22 2024]
+rule bcftools_merge_targets_gvcf:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_targets.txt
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.gvcf.gz
+    jobid: 4
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.gvcf.gz; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_targets.txt
+    resources: tmpdir=/tmp
+
+[Wed Mar 13 17:38:22 2024]
+Error in rule bcftools_merge_raw_vcf:
+    jobid: 8
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.vcf.gz
+    shell:
+        
+		bcftools merge --file-list /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_raw.txt --force-samples -O z -o /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.vcf.gz 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job bcftools_merge_raw_vcf since they might be corrupted:
+/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.vcf.gz
+[Wed Mar 13 17:38:22 2024]
+Error in rule bcftools_merge_targets_vcf:
+    jobid: 10
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.vcf.gz
+    shell:
+        
+		bcftools merge --file-list /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/vcf_paths_targets.txt --force-samples -O z -o /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.vcf.gz
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job bcftools_merge_targets_vcf since they might be corrupted:
+/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.vcf.gz
+[Wed Mar 13 17:38:22 2024]
+Error in rule bcftools_merge_raw_gvcf:
+    jobid: 2
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_raw.txt
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.gvcf.gz
+    shell:
+        
+		bcftools merge --file-list /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_raw.txt --force-samples -O z -o /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.gvcf.gz  
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job bcftools_merge_raw_gvcf since they might be corrupted:
+/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_raw/merged_multisample.gvcf.gz
+[Wed Mar 13 17:38:22 2024]
+Error in rule bcftools_merge_targets_gvcf:
+    jobid: 4
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_targets.txt
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.gvcf.gz
+    shell:
+        
+		bcftools merge --file-list /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/gvcf_paths_targets.txt --force-samples -O z -o /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.gvcf.gz 
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job bcftools_merge_targets_gvcf since they might be corrupted:
+/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output_rerun_for_completeness_check/variant_calling/bcftools_merge_output_targets/merged_multisample.gvcf.gz
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-03-13T173820.966845.snakemake.log
