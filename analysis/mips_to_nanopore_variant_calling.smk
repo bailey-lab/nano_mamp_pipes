@@ -32,6 +32,7 @@ def get_samples_for_targeted_calling_from_bam_coverage():
     return sample_names
 
 # rule all to specify final output files
+
 rule all:
 	input:
 		finished_gvcf=config['output_dir']+'/variant_calling/nanomip_variants.gvcf.gz',
@@ -61,6 +62,7 @@ rule run_clair3_raw:
 	shell:
 		'''
 		echo 'Processing sample: {wildcards.sample}'
+
 		singularity exec \
 			-B {params.INPUT_DIR} \
 			-B {params.OUTPUT_DIR} \
