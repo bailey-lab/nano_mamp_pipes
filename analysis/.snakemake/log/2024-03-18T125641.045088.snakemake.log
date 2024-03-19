@@ -1,0 +1,3 @@
+AttributeError in file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_variant_calling_with_target_check.smk, line 53:
+'function' object has no attribute 'get_wildcard_names'
+  File "/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_variant_calling_with_target_check.smk", line 53, in <module>

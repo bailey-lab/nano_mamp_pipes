@@ -19,6 +19,7 @@ def get_samples():
     ]
     return sample_names
 
+
 # Rule all to specify final output files
 rule all:
 	input:
