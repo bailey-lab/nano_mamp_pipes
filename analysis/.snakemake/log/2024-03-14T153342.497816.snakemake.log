@@ -1,0 +1,4 @@
+KeyError in file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_variant_calling_with_target_check.smk, line 23:
+'out_dir'
+  File "/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_variant_calling_with_target_check.smk", line 181, in <module>
+  File "/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_variant_calling_with_target_check.smk", line 23, in get_samples_for_targeted_calling_from_bam_coverage

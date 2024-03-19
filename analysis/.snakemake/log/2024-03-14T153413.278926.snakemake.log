@@ -1,0 +1,799 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Provided resources: nodes=200, mem_mb=1000000
+Job stats:
+job                                    count    min threads    max threads
+-----------------------------------  -------  -------------  -------------
+all                                        1              1              1
+bcftools_index_gvcf_targets               70              1              1
+bcftools_index_merged_raw_gvcf             1              1              1
+bcftools_index_merged_raw_vcf              1              1              1
+bcftools_index_merged_targets_gvcf         1              1              1
+bcftools_index_merged_targets_vcf          1              1              1
+bcftools_index_vcf_targets                70              1              1
+bcftools_merge_raw_and_targets_gvcf        1              1              1
+bcftools_merge_raw_and_targets_vcf         1              1              1
+bcftools_merge_raw_gvcf                    1              1              1
+bcftools_merge_raw_vcf                     1              1              1
+bcftools_merge_targets_gvcf                1              1              1
+bcftools_merge_targets_vcf                 1              1              1
+prepare_gvcf_lists                         1              1              1
+prepare_vcf_lists                          1              1              1
+run_clair3_targets                        70              1              1
+total                                    223              1              1
+
+Select jobs to execute...
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-466466-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-466466-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-466466-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 185
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-466466-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1836, disk_mib=1751, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 185 with external jobid 'Submitted batch job 1085337'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-260260-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-260260-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-260260-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 241
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-260260-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1829, disk_mib=1745, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 241 with external jobid 'Submitted batch job 1085338'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-502502-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-502502-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-502502-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 199
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-502502-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1824, disk_mib=1740, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 199 with external jobid 'Submitted batch job 1085339'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-24024-042042-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-24024-042042-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 221
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-24024-042042-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1821, disk_mib=1737, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 221 with external jobid 'Submitted batch job 1085340'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW80808-292292-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW80808-292292-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW80808-292292-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 277
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW80808-292292-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1828, disk_mib=1744, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 277 with external jobid 'Submitted batch job 1085341'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-13013-301301-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-13013-301301-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-13013-301301-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 157
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-13013-301301-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1832, disk_mib=1748, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 157 with external jobid 'Submitted batch job 1085342'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/3d7-500.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/3d7-500_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/3d7-500_targets/merge_output.gvcf.gz
+    jobid: 151
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=3d7-500
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1801, disk_mib=1718, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 151 with external jobid 'Submitted batch job 1085343'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-516516-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-516516-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 207
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-516516-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1822, disk_mib=1738, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 207 with external jobid 'Submitted batch job 1085344'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW016016-067067-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW016016-067067-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW016016-067067-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 263
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW016016-067067-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1823, disk_mib=1739, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 263 with external jobid 'Submitted batch job 1085345'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-489489-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-489489-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 193
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-489489-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1817, disk_mib=1733, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 193 with external jobid 'Submitted batch job 1085346'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-009009-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-009009-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 249
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW015015-009009-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1813, disk_mib=1730, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 249 with external jobid 'Submitted batch job 1085347'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-451451-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-451451-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 179
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-451451-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1844, disk_mib=1759, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 179 with external jobid 'Submitted batch job 1085348'.
+
+[Thu Mar 14 15:34:17 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-215215-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-215215-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-215215-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 235
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-215215-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1829, disk_mib=1745, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 235 with external jobid 'Submitted batch job 1085349'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-590590-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-590590-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-590590-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 213
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-590590-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1809, disk_mib=1726, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 213 with external jobid 'Submitted batch job 1085350'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-434434-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-434434-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 173
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-434434-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1841, disk_mib=1756, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 173 with external jobid 'Submitted batch job 1085351'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-168168-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-168168-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-168168-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 229
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-168168-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1828, disk_mib=1744, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 229 with external jobid 'Submitted batch job 1085352'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-304304-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-304304-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-304304-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 165
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-304304-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1840, disk_mib=1755, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 165 with external jobid 'Submitted batch job 1085353'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW17017-270270-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW17017-270270-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 271
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW17017-270270-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1849, disk_mib=1764, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 271 with external jobid 'Submitted batch job 1085354'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-599599-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-599599-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 215
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-599599-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1815, disk_mib=1731, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 215 with external jobid 'Submitted batch job 1085355'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-509509-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-509509-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-509509-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 201
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-509509-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1831, disk_mib=1747, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 201 with external jobid 'Submitted batch job 1085356'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/3d7-1000.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/3d7-1000_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/3d7-1000_targets/merge_output.gvcf.gz
+    jobid: 145
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=3d7-1000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1803, disk_mib=1720, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 145 with external jobid 'Submitted batch job 1085357'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-075075-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-075075-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 257
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW015015-075075-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1822, disk_mib=1738, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 257 with external jobid 'Submitted batch job 1085358'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-469469-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-469469-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 187
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-469469-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1834, disk_mib=1750, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 187 with external jobid 'Submitted batch job 1085359'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-262262-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-262262-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 243
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-262262-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1843, disk_mib=1758, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 243 with external jobid 'Submitted batch job 1085360'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-26026-012012-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-26026-012012-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-26026-012012-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 223
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-26026-012012-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1829, disk_mib=1745, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 223 with external jobid 'Submitted batch job 1085361'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-333333-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-333333-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-333333-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 167
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-333333-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1817, disk_mib=1733, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 167 with external jobid 'Submitted batch job 1085362'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-13013-303303-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-13013-303303-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 159
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-13013-303303-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1826, disk_mib=1742, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 159 with external jobid 'Submitted batch job 1085363'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW80808-306306-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW80808-306306-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW80808-306306-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 279
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW80808-306306-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1820, disk_mib=1736, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 279 with external jobid 'Submitted batch job 1085364'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-563563-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-563563-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 209
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-563563-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1827, disk_mib=1743, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 209 with external jobid 'Submitted batch job 1085365'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/NTP.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/NTP_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/NTP_targets/merge_output.gvcf.gz
+    jobid: 153
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=NTP
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1799, disk_mib=1716, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 153 with external jobid 'Submitted batch job 1085366'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW016016-068068-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW016016-068068-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 265
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW016016-068068-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1827, disk_mib=1743, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 265 with external jobid 'Submitted batch job 1085367'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-492492-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-492492-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-492492-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 195
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-492492-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1830, disk_mib=1746, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 195 with external jobid 'Submitted batch job 1085368'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW015015-033033-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-033033-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-033033-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 251
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW015015-033033-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1822, disk_mib=1738, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 251 with external jobid 'Submitted batch job 1085369'.
+
+[Thu Mar 14 15:34:18 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-455455-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-455455-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 181
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-455455-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1839, disk_mib=1754, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 181 with external jobid 'Submitted batch job 1085370'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-221221-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-221221-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-221221-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 237
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-221221-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1842, disk_mib=1757, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 237 with external jobid 'Submitted batch job 1085371'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-189189-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-189189-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-189189-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 231
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-189189-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1837, disk_mib=1752, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 231 with external jobid 'Submitted batch job 1085372'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-448448-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-448448-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 175
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-448448-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1829, disk_mib=1745, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 175 with external jobid 'Submitted batch job 1085373'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-21021-090090-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-21021-090090-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 217
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-21021-090090-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1828, disk_mib=1744, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 217 with external jobid 'Submitted batch job 1085374'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW18018-050050-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW18018-050050-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW18018-050050-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 273
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW18018-050050-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1810, disk_mib=1727, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 273 with external jobid 'Submitted batch job 1085375'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-510510-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-510510-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 203
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-510510-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1831, disk_mib=1747, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 203 with external jobid 'Submitted batch job 1085376'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/3d7-2000.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/3d7-2000_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/3d7-2000_targets/merge_output.gvcf.gz
+    jobid: 147
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=3d7-2000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1808, disk_mib=1725, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 147 with external jobid 'Submitted batch job 1085377'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW016016-015015-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW016016-015015-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW016016-015015-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 259
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW016016-015015-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1822, disk_mib=1738, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 259 with external jobid 'Submitted batch job 1085378'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-481481-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-481481-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-481481-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 189
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-481481-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1828, disk_mib=1744, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 189 with external jobid 'Submitted batch job 1085379'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-263263-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-263263-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-263263-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 245
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-263263-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1828, disk_mib=1744, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 245 with external jobid 'Submitted batch job 1085380'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW90909-17111711-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW90909-17111711-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 283
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW90909-17111711-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1826, disk_mib=1742, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 283 with external jobid 'Submitted batch job 1085381'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-26026-039039-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-26026-039039-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 225
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-26026-039039-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1829, disk_mib=1745, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 225 with external jobid 'Submitted batch job 1085382'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-359359-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-359359-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-359359-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 169
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-359359-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1835, disk_mib=1750, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 169 with external jobid 'Submitted batch job 1085383'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-14014-308308-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-14014-308308-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 161
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-14014-308308-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1816, disk_mib=1732, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 161 with external jobid 'Submitted batch job 1085384'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW90909-16201620-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW90909-16201620-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW90909-16201620-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 281
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW90909-16201620-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1816, disk_mib=1732, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 281 with external jobid 'Submitted batch job 1085385'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-582582-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-582582-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-582582-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 211
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-582582-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1805, disk_mib=1722, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 211 with external jobid 'Submitted batch job 1085386'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-11011-093093-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-11011-093093-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-11011-093093-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 155
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-11011-093093-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1817, disk_mib=1733, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 155 with external jobid 'Submitted batch job 1085387'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW13013-105105-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW13013-105105-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW13013-105105-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 267
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW13013-105105-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1837, disk_mib=1752, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 267 with external jobid 'Submitted batch job 1085388'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-496496-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-496496-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 197
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-496496-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1815, disk_mib=1731, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 197 with external jobid 'Submitted batch job 1085389'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW015015-037037-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-037037-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-037037-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 253
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW015015-037037-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1832, disk_mib=1748, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 253 with external jobid 'Submitted batch job 1085390'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-459459-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-459459-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-459459-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 183
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-459459-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1823, disk_mib=1739, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 183 with external jobid 'Submitted batch job 1085391'.
+
+[Thu Mar 14 15:34:19 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-247247-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-247247-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-247247-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 239
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-247247-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1822, disk_mib=1738, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 239 with external jobid 'Submitted batch job 1085392'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW013013-191191-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-191191-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW013013-191191-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 233
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW013013-191191-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1836, disk_mib=1751, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 233 with external jobid 'Submitted batch job 1085393'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-450450-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-450450-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-450450-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 177
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-450450-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1840, disk_mib=1755, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 177 with external jobid 'Submitted batch job 1085394'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-21021-109109-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-21021-109109-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-21021-109109-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 219
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-21021-109109-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1841, disk_mib=1756, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 219 with external jobid 'Submitted batch job 1085395'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW60606-096096-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW60606-096096-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW60606-096096-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 275
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW60606-096096-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1814, disk_mib=1730, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 275 with external jobid 'Submitted batch job 1085396'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-511511-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-511511-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-511511-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 205
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-511511-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1828, disk_mib=1744, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 205 with external jobid 'Submitted batch job 1085397'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/3d7-4000.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/3d7-4000_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/3d7-4000_targets/merge_output.gvcf.gz
+    jobid: 149
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=3d7-4000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1819, disk_mib=1735, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 149 with external jobid 'Submitted batch job 1085398'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW016016-054054-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW016016-054054-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 261
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW016016-054054-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1828, disk_mib=1744, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 261 with external jobid 'Submitted batch job 1085399'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-484484-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-484484-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-484484-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 191
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-484484-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1820, disk_mib=1736, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 191 with external jobid 'Submitted batch job 1085400'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW014014-112112-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW014014-112112-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 247
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW014014-112112-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1830, disk_mib=1746, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 247 with external jobid 'Submitted batch job 1085401'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-26026-078078-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-26026-078078-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 227
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-26026-078078-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1834, disk_mib=1750, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 227 with external jobid 'Submitted batch job 1085402'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-393393-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-17017-393393-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 171
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-17017-393393-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1820, disk_mib=1736, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 171 with external jobid 'Submitted batch job 1085403'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW-14014-342342-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-14014-342342-ArtR23RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW-14014-342342-ArtR23RW-1_targets/merge_output.gvcf.gz
+    jobid: 163
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW-14014-342342-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1831, disk_mib=1747, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 163 with external jobid 'Submitted batch job 1085404'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW17017-267267-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW17017-267267-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW17017-267267-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 269
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW17017-267267-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1814, disk_mib=1730, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 269 with external jobid 'Submitted batch job 1085405'.
+
+[Thu Mar 14 15:34:20 2024]
+rule run_clair3_targets:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-043043-ArtR22RW-1_targets/merge_output.vcf.gz, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check/variant_calling/RW015015-043043-ArtR22RW-1_targets/merge_output.gvcf.gz
+    jobid: 255
+    reason: Code has changed since last execution
+    wildcards: samples_for_targeted_calling=RW015015-043043-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1799, disk_mib=1716, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 255 with external jobid 'Submitted batch job 1085406'.
+Terminating processes on user request, this might take some time.
+No --cluster-cancel given. Will exit after finishing currently running jobs.
+Cancelling snakemake on user request.
