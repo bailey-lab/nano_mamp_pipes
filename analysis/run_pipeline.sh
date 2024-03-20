@@ -13,7 +13,7 @@
 # 3. Run minimap2 alignment
 # 4. Run clair3 variant calling
 # 5. Run vcf_to_tables and miplithon combined .py script
-
+# test
 # define directory of batch script so dorado_bashcalling.sh can be found and called
 # Inside the script
 if [ -n "${SLURM_JOB_ID:-}" ]; then
