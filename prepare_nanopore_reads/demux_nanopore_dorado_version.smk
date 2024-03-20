@@ -6,7 +6,7 @@ rule all:
 
 rule demux_files:
 	input:
-		zipped_file=config['output_folder']+'/catted_pass.fastq.gz',
+		zipped_file=config['output_folder']+'/basecalls.fastq',
 		elucidator_sif=config['elucidator_sif'],
 		barcodes_dir=config['barcodes_dir']
 	params:
@@ -22,7 +22,7 @@ rule demux_files:
 		singularity exec \
 		-B {input.barcodes_dir}:/opt/resources \
 		-B {params.fastq_dir}:/opt/demuxing {input.elucidator_sif} \
-		elucidator extractByIlluminaAaptors --fastqgz /opt/demuxing/catted_pass.fastq.gz \
+		elucidator extractByIlluminaAaptors --fastq /opt/demuxing/basecalls.fastq \
 		--overWriteDir --dout /opt/demuxing/demuxed_fastq \
 		--illuminaBarcodeSampleSheet /opt/resources/{params.sample_barcodes}
 		'''
