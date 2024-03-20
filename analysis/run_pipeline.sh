@@ -44,6 +44,9 @@ sbatch "$THEPATH"/src/find_failed_reads.sh
 # run minimap2 alignment
 snakemake -s  "$THEPATH"/src/mips_to_nanopore_alignment.smk --profile slurm
 
+# run check_bams_for_target_reads.sh (or could add this to the end of the alignment smk)
+sbatch  "$THEPATH"/src/check_bams_for_target_reads.sh
+
 # run clair3 variant calling
 snakemake -s  "$THEPATH"/src/mips_to_nanopore_variant_calling.smk --profile slurm
 
