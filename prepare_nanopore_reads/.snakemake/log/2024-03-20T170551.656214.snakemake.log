@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Provided resources: cluster_threads=200, mem_mb=1000000
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+demux_files        1              1              1
+total              2              1              1
+
+Select jobs to execute...
+
+[Wed Mar 20 17:05:52 2024]
+rule demux_files:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/basecalls.fastq, /nfs/jbailey5/baileyweb/bailey_share/bin/elucidator_23-07-19.sif, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/toy_dataset
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq
+    jobid: 1
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq
+    resources: mem_mb=32000, mem_mib=30518, disk_mb=35275, disk_mib=33641, tmpdir=<TBD>, cluster_threads=1, time_min=2879, partition=batch, extra_flags=
+
+Submitted job 1 with external jobid 'Submitted batch job 1137328'.

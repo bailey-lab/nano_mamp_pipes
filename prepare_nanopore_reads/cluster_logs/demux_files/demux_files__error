@@ -1,0 +1,15 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=32000, mem_mib=30518, disk_mb=35275, disk_mib=33641, cluster_threads=1, time_min=2879
+Select jobs to execute...
+
+[Wed Mar 20 17:05:58 2024]
+rule demux_files:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/basecalls.fastq, /nfs/jbailey5/baileyweb/bailey_share/bin/elucidator_23-07-19.sif, /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/toy_dataset
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq
+    jobid: 0
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq
+    resources: mem_mb=32000, mem_mib=30518, disk_mb=35275, disk_mib=33641, tmpdir=/tmp, cluster_threads=1, time_min=2879, partition=batch, extra_flags=
+

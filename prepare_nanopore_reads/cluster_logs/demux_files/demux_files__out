@@ -1,0 +1,9 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1137328
+##  Job Name : snakejob.demux_files.1.sh
+##  Nodelist : node1734
+##      CPUs : 1
+##  Mem/Node : 32000 MB
+## Directory : /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/prepare_nanopore_reads
+##   Job Started : Wed Mar 20 05:05:53 PM EDT 2024
+###############################################################################
