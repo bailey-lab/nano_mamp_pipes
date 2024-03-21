@@ -1,0 +1,1093 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Provided resources: nodes=200, mem_mb=1000000
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+index_bam       30              1              1
+make_bam        14              1              1
+make_sam         6              1              1
+sort_bam        22              1              1
+total           73              1              1
+
+Select jobs to execute...
+
+[Thu Mar 21 15:22:02 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam
+    jobid: 115
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-24024-042042-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 115 with external jobid 'Submitted batch job 1144910'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW016016-054054-ArtR22RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.bam
+    jobid: 176
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.bam
+    wildcards: sample=RW016016-054054-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 176 with external jobid 'Submitted batch job 1144911'.
+
+[Thu Mar 21 15:22:02 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam
+    jobid: 64
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-469469-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 64 with external jobid 'Submitted batch job 1144912'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-516516-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.bam
+    jobid: 95
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-516516-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 95 with external jobid 'Submitted batch job 1144913'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-13013-303303-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam
+    jobid: 23
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam
+    wildcards: sample=RW-13013-303303-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 23 with external jobid 'Submitted batch job 1144914'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW17017-270270-ArtR22RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.bam
+    jobid: 191
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.bam
+    wildcards: sample=RW17017-270270-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 191 with external jobid 'Submitted batch job 1144915'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW014014-112112-ArtR22RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.bam
+    jobid: 155
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.bam
+    wildcards: sample=RW014014-112112-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 155 with external jobid 'Submitted batch job 1144916'.
+
+[Thu Mar 21 15:22:02 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-4000.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-4000.sorted.bam.bai
+    jobid: 213
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-4000.sorted.bam.bai
+    wildcards: sample=3d7-4000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 213 with external jobid 'Submitted batch job 1144917'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq/fastq/3d7-2000.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/3d7-2000.sam
+    jobid: 6
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/3d7-2000.sam
+    wildcards: sample=3d7-2000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 6 with external jobid 'Submitted batch job 1144918'.
+
+[Thu Mar 21 15:22:02 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam
+    jobid: 73
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-489489-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 73 with external jobid 'Submitted batch job 1144919'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq/fastq/RW015015-075075-ArtR22RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam
+    jobid: 171
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam
+    wildcards: sample=RW015015-075075-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 171 with external jobid 'Submitted batch job 1144920'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq/fastq/RW-26026-078078-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-26026-078078-ArtR23RW-1.sam
+    jobid: 126
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-26026-078078-ArtR23RW-1.sam
+    wildcards: sample=RW-26026-078078-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 126 with external jobid 'Submitted batch job 1144921'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq/fastq/RW015015-009009-ArtR22RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-009009-ArtR22RW-1.sam
+    jobid: 159
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-009009-ArtR22RW-1.sam
+    wildcards: sample=RW015015-009009-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 159 with external jobid 'Submitted batch job 1144922'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq/fastq/RW-17017-448448-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-448448-ArtR23RW-1.sam
+    jobid: 48
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-448448-ArtR23RW-1.sam
+    wildcards: sample=RW-17017-448448-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 48 with external jobid 'Submitted batch job 1144923'.
+
+[Thu Mar 21 15:22:02 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq/fastq/RW-21021-090090-ArtR23RW-1.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-21021-090090-ArtR23RW-1.sam
+    jobid: 111
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-21021-090090-ArtR23RW-1.sam
+    wildcards: sample=RW-21021-090090-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 111 with external jobid 'Submitted batch job 1144924'.
+
+[Thu Mar 21 15:22:03 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-1000.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-1000.sorted.bam.bai
+    jobid: 211
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-1000.sorted.bam.bai
+    wildcards: sample=3d7-1000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 211 with external jobid 'Submitted batch job 1144925'.
+
+[Thu Mar 21 15:22:03 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-434434-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.bam
+    jobid: 44
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-434434-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 44 with external jobid 'Submitted batch job 1144926'.
+
+[Thu Mar 21 15:22:03 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW90909-17111711-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.bam
+    jobid: 209
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.bam
+    wildcards: sample=RW90909-17111711-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 209 with external jobid 'Submitted batch job 1144927'.
+
+[Thu Mar 21 15:22:03 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-215215-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-215215-ArtR23RW-1.sorted.bam.bai
+    jobid: 256
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-215215-ArtR23RW-1.sorted.bam.bai
+    wildcards: sample=RW013013-215215-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 256 with external jobid 'Submitted batch job 1144928'.
+
+[Thu Mar 21 15:22:03 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam
+    jobid: 25
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-14014-308308-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 25 with external jobid 'Submitted batch job 1144929'.
+
+[Thu Mar 21 15:22:03 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam
+    jobid: 121
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-26026-039039-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 121 with external jobid 'Submitted batch job 1144930'.
+
+[Thu Mar 21 15:22:03 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam
+    jobid: 40
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-393393-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 40 with external jobid 'Submitted batch job 1144931'.
+
+[Thu Mar 21 15:22:03 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam
+    jobid: 79
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-496496-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 79 with external jobid 'Submitted batch job 1144932'.
+
+[Thu Mar 21 15:22:03 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-191191-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-191191-ArtR23RW-1.sorted.bam.bai
+    jobid: 255
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-191191-ArtR23RW-1.sorted.bam.bai
+    wildcards: sample=RW013013-191191-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 255 with external jobid 'Submitted batch job 1144933'.
+
+[Thu Mar 21 15:22:03 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-451451-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.bam
+    jobid: 53
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-451451-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 53 with external jobid 'Submitted batch job 1144934'.
+
+[Thu Mar 21 15:22:03 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam.bai
+    jobid: 266
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam.bai
+    wildcards: sample=RW015015-043043-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 266 with external jobid 'Submitted batch job 1144935'.
+
+[Thu Mar 21 15:22:03 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam.bai
+    jobid: 260
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam.bai
+    wildcards: sample=RW013013-262262-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 260 with external jobid 'Submitted batch job 1144936'.
+
+[Thu Mar 21 15:22:03 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam
+    jobid: 55
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-455455-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 55 with external jobid 'Submitted batch job 1144937'.
+
+[Thu Mar 21 15:22:03 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam.bai
+    jobid: 246
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam.bai
+    wildcards: sample=RW-17017-599599-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 246 with external jobid 'Submitted batch job 1144938'.
+
+[Thu Mar 21 15:22:03 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-012012-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-012012-ArtR23RW-1.sorted.bam.bai
+    jobid: 250
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-012012-ArtR23RW-1.sorted.bam.bai
+    wildcards: sample=RW-26026-012012-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 250 with external jobid 'Submitted batch job 1144939'.
+[Thu Mar 21 15:23:48 2024]
+Finished job 115.
+1 of 73 steps (1%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:23:48 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam.bai
+    jobid: 249
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-24024-042042-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 249 with external jobid 'Submitted batch job 1144949'.
+[Thu Mar 21 15:23:48 2024]
+Finished job 176.
+2 of 73 steps (3%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW016016-054054-ArtR22RW-1.sam.
+[Thu Mar 21 15:23:48 2024]
+Finished job 64.
+3 of 73 steps (4%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.bam.
+[Thu Mar 21 15:23:48 2024]
+Finished job 95.
+4 of 73 steps (5%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-516516-ArtR23RW-1.sam.
+[Thu Mar 21 15:23:48 2024]
+Finished job 23.
+5 of 73 steps (7%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-13013-303303-ArtR23RW-1.sam.
+[Thu Mar 21 15:23:48 2024]
+Finished job 191.
+6 of 73 steps (8%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW17017-270270-ArtR22RW-1.sam.
+[Thu Mar 21 15:23:48 2024]
+Finished job 155.
+7 of 73 steps (10%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW014014-112112-ArtR22RW-1.sam.
+[Thu Mar 21 15:23:48 2024]
+Finished job 213.
+8 of 73 steps (11%) done
+Select jobs to execute...
+
+[Thu Mar 21 15:23:48 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam
+    jobid: 154
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.bam
+    wildcards: sample=RW014014-112112-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 154 with external jobid 'Submitted batch job 1144950'.
+
+[Thu Mar 21 15:23:48 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam
+    jobid: 175
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.bam
+    wildcards: sample=RW016016-054054-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 175 with external jobid 'Submitted batch job 1144951'.
+
+[Thu Mar 21 15:23:48 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam
+    jobid: 22
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam
+    wildcards: sample=RW-13013-303303-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 22 with external jobid 'Submitted batch job 1144952'.
+
+[Thu Mar 21 15:23:48 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam.bai
+    jobid: 232
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-469469-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 232 with external jobid 'Submitted batch job 1144953'.
+
+[Thu Mar 21 15:23:48 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam
+    jobid: 94
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-516516-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 94 with external jobid 'Submitted batch job 1144954'.
+
+[Thu Mar 21 15:23:48 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam
+    jobid: 190
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.bam
+    wildcards: sample=RW17017-270270-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 190 with external jobid 'Submitted batch job 1144955'.
+[Thu Mar 21 15:23:49 2024]
+Finished job 6.
+9 of 73 steps (12%) done
+[Thu Mar 21 15:23:49 2024]
+Finished job 73.
+10 of 73 steps (14%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:23:49 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/3d7-2000.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.bam
+    jobid: 5
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/3d7-2000.sam
+    wildcards: sample=3d7-2000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 5 with external jobid 'Submitted batch job 1144956'.
+
+[Thu Mar 21 15:23:49 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam.bai
+    jobid: 235
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-489489-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 235 with external jobid 'Submitted batch job 1144957'.
+[Thu Mar 21 15:23:49 2024]
+Finished job 171.
+11 of 73 steps (15%) done
+Select jobs to execute...
+
+[Thu Mar 21 15:23:49 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam
+    jobid: 170
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam
+    wildcards: sample=RW015015-075075-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 170 with external jobid 'Submitted batch job 1144958'.
+[Thu Mar 21 15:23:49 2024]
+Finished job 126.
+12 of 73 steps (16%) done
+Select jobs to execute...
+
+[Thu Mar 21 15:23:49 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-26026-078078-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.bam
+    jobid: 125
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-26026-078078-ArtR23RW-1.sam
+    wildcards: sample=RW-26026-078078-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 125 with external jobid 'Submitted batch job 1144959'.
+[Thu Mar 21 15:23:49 2024]
+Finished job 159.
+13 of 73 steps (18%) done
+Select jobs to execute...
+
+[Thu Mar 21 15:23:49 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-009009-ArtR22RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.bam
+    jobid: 158
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-009009-ArtR22RW-1.sam
+    wildcards: sample=RW015015-009009-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 158 with external jobid 'Submitted batch job 1144960'.
+[Thu Mar 21 15:23:49 2024]
+Finished job 48.
+14 of 73 steps (19%) done
+[Thu Mar 21 15:23:49 2024]
+Finished job 111.
+15 of 73 steps (21%) done
+[Thu Mar 21 15:23:49 2024]
+Finished job 211.
+16 of 73 steps (22%) done
+[Thu Mar 21 15:23:49 2024]
+Finished job 44.
+17 of 73 steps (23%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-434434-ArtR23RW-1.sam.
+[Thu Mar 21 15:23:49 2024]
+Finished job 209.
+18 of 73 steps (25%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW90909-17111711-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Thu Mar 21 15:23:49 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-448448-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.bam
+    jobid: 47
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-448448-ArtR23RW-1.sam
+    wildcards: sample=RW-17017-448448-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 47 with external jobid 'Submitted batch job 1144961'.
+
+[Thu Mar 21 15:23:49 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam
+    jobid: 43
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-434434-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 43 with external jobid 'Submitted batch job 1144962'.
+
+[Thu Mar 21 15:23:49 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-21021-090090-ArtR23RW-1.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.bam
+    jobid: 110
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-21021-090090-ArtR23RW-1.sam
+    wildcards: sample=RW-21021-090090-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 110 with external jobid 'Submitted batch job 1144963'.
+
+[Thu Mar 21 15:23:49 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam
+    jobid: 208
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.bam
+    wildcards: sample=RW90909-17111711-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 208 with external jobid 'Submitted batch job 1144964'.
+[Thu Mar 21 15:23:49 2024]
+Finished job 256.
+19 of 73 steps (26%) done
+[Thu Mar 21 15:23:49 2024]
+Finished job 25.
+20 of 73 steps (27%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:23:49 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam.bai
+    jobid: 219
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-14014-308308-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 219 with external jobid 'Submitted batch job 1144965'.
+[Thu Mar 21 15:23:50 2024]
+Finished job 121.
+21 of 73 steps (29%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:23:50 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam.bai
+    jobid: 251
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-26026-039039-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 251 with external jobid 'Submitted batch job 1144966'.
+[Thu Mar 21 15:23:50 2024]
+Finished job 40.
+22 of 73 steps (30%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:23:50 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam.bai
+    jobid: 224
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-393393-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 224 with external jobid 'Submitted batch job 1144967'.
+[Thu Mar 21 15:23:50 2024]
+Finished job 79.
+23 of 73 steps (32%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.bam.
+[Thu Mar 21 15:23:50 2024]
+Finished job 255.
+24 of 73 steps (33%) done
+Select jobs to execute...
+
+[Thu Mar 21 15:23:50 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam.bai
+    jobid: 237
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-496496-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 237 with external jobid 'Submitted batch job 1144968'.
+[Thu Mar 21 15:23:50 2024]
+Finished job 53.
+25 of 73 steps (34%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-451451-ArtR23RW-1.sam.
+[Thu Mar 21 15:23:50 2024]
+Finished job 266.
+26 of 73 steps (36%) done
+[Thu Mar 21 15:23:50 2024]
+Finished job 260.
+27 of 73 steps (37%) done
+[Thu Mar 21 15:23:50 2024]
+Finished job 55.
+28 of 73 steps (38%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.bam.
+[Thu Mar 21 15:23:50 2024]
+Finished job 246.
+29 of 73 steps (40%) done
+Select jobs to execute...
+
+[Thu Mar 21 15:23:50 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam
+    jobid: 52
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-451451-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 52 with external jobid 'Submitted batch job 1144969'.
+
+[Thu Mar 21 15:23:50 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam.bai
+    jobid: 229
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-455455-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 229 with external jobid 'Submitted batch job 1144970'.
+[Thu Mar 21 15:23:50 2024]
+Finished job 250.
+30 of 73 steps (41%) done
+[Thu Mar 21 15:25:37 2024]
+Finished job 249.
+31 of 73 steps (42%) done
+[Thu Mar 21 15:25:37 2024]
+Finished job 154.
+32 of 73 steps (44%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:25:37 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam.bai
+    jobid: 262
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam
+    wildcards: sample=RW014014-112112-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 262 with external jobid 'Submitted batch job 1144982'.
+[Thu Mar 21 15:25:37 2024]
+Finished job 175.
+33 of 73 steps (45%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.bam.
+[Thu Mar 21 15:25:37 2024]
+Finished job 22.
+34 of 73 steps (47%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.bam.
+[Thu Mar 21 15:25:37 2024]
+Finished job 232.
+35 of 73 steps (48%) done
+[Thu Mar 21 15:25:37 2024]
+Finished job 94.
+36 of 73 steps (49%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.bam.
+[Thu Mar 21 15:25:37 2024]
+Finished job 190.
+37 of 73 steps (51%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.bam.
+[Thu Mar 21 15:25:37 2024]
+Finished job 5.
+38 of 73 steps (52%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/3d7-2000.sam.
+[Thu Mar 21 15:25:37 2024]
+Finished job 235.
+39 of 73 steps (53%) done
+[Thu Mar 21 15:25:37 2024]
+Finished job 170.
+40 of 73 steps (55%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-075075-ArtR22RW-1.sam.
+Select jobs to execute...
+
+[Thu Mar 21 15:25:37 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam.bai
+    jobid: 218
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-13013-303303-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 218 with external jobid 'Submitted batch job 1144983'.
+
+[Thu Mar 21 15:25:37 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam.bai
+    jobid: 242
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-516516-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 242 with external jobid 'Submitted batch job 1144984'.
+
+[Thu Mar 21 15:25:37 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam
+    jobid: 169
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam
+    wildcards: sample=RW015015-075075-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 169 with external jobid 'Submitted batch job 1144985'.
+
+[Thu Mar 21 15:25:37 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam
+    jobid: 4
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.bam
+    wildcards: sample=3d7-2000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 4 with external jobid 'Submitted batch job 1144986'.
+
+[Thu Mar 21 15:25:37 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam.bai
+    jobid: 269
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam
+    wildcards: sample=RW016016-054054-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 269 with external jobid 'Submitted batch job 1144987'.
+
+[Thu Mar 21 15:25:37 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam.bai
+    jobid: 274
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam
+    wildcards: sample=RW17017-270270-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 274 with external jobid 'Submitted batch job 1144988'.
+[Thu Mar 21 15:25:38 2024]
+Finished job 125.
+41 of 73 steps (56%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-26026-078078-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Thu Mar 21 15:25:38 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam
+    jobid: 124
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.bam
+    wildcards: sample=RW-26026-078078-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 124 with external jobid 'Submitted batch job 1144989'.
+[Thu Mar 21 15:25:38 2024]
+Finished job 158.
+42 of 73 steps (58%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW015015-009009-ArtR22RW-1.sam.
+[Thu Mar 21 15:25:38 2024]
+Finished job 47.
+43 of 73 steps (59%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-17017-448448-ArtR23RW-1.sam.
+Select jobs to execute...
+
+[Thu Mar 21 15:25:38 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam
+    jobid: 157
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.bam
+    wildcards: sample=RW015015-009009-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 157 with external jobid 'Submitted batch job 1144990'.
+
+[Thu Mar 21 15:25:38 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam
+    jobid: 46
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.bam
+    wildcards: sample=RW-17017-448448-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 46 with external jobid 'Submitted batch job 1144991'.
+[Thu Mar 21 15:25:38 2024]
+Finished job 43.
+44 of 73 steps (60%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.bam.
+[Thu Mar 21 15:25:38 2024]
+Finished job 110.
+45 of 73 steps (62%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/sam_files/RW-21021-090090-ArtR23RW-1.sam.
+[Thu Mar 21 15:25:38 2024]
+Finished job 208.
+46 of 73 steps (63%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.bam.
+[Thu Mar 21 15:25:38 2024]
+Finished job 219.
+47 of 73 steps (64%) done
+[Thu Mar 21 15:25:38 2024]
+Finished job 251.
+48 of 73 steps (66%) done
+[Thu Mar 21 15:25:38 2024]
+Finished job 224.
+49 of 73 steps (67%) done
+[Thu Mar 21 15:25:38 2024]
+Finished job 237.
+50 of 73 steps (68%) done
+Select jobs to execute...
+
+[Thu Mar 21 15:25:38 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam.bai
+    jobid: 280
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW90909-17111711-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 280 with external jobid 'Submitted batch job 1144992'.
+
+[Thu Mar 21 15:25:38 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam
+    jobid: 109
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.bam
+    wildcards: sample=RW-21021-090090-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 109 with external jobid 'Submitted batch job 1144993'.
+
+[Thu Mar 21 15:25:38 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam.bai
+    jobid: 225
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-434434-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 225 with external jobid 'Submitted batch job 1144994'.
+[Thu Mar 21 15:25:39 2024]
+Finished job 52.
+51 of 73 steps (70%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:25:39 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam.bai
+    jobid: 228
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-451451-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 228 with external jobid 'Submitted batch job 1144995'.
+[Thu Mar 21 15:25:39 2024]
+Finished job 229.
+52 of 73 steps (71%) done
+[Thu Mar 21 15:27:28 2024]
+Finished job 262.
+53 of 73 steps (73%) done
+[Thu Mar 21 15:27:28 2024]
+Finished job 218.
+54 of 73 steps (74%) done
+[Thu Mar 21 15:27:28 2024]
+Finished job 242.
+55 of 73 steps (75%) done
+[Thu Mar 21 15:27:28 2024]
+Finished job 169.
+56 of 73 steps (77%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:27:28 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam.bai
+    jobid: 267
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam
+    wildcards: sample=RW015015-075075-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 267 with external jobid 'Submitted batch job 1145005'.
+[Thu Mar 21 15:27:28 2024]
+Finished job 4.
+57 of 73 steps (78%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.bam.
+[Thu Mar 21 15:27:28 2024]
+Finished job 269.
+58 of 73 steps (79%) done
+[Thu Mar 21 15:27:28 2024]
+Finished job 274.
+59 of 73 steps (81%) done
+[Thu Mar 21 15:27:28 2024]
+Finished job 124.
+60 of 73 steps (82%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.bam.
+[Thu Mar 21 15:27:28 2024]
+Finished job 157.
+61 of 73 steps (84%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.bam.
+[Thu Mar 21 15:27:28 2024]
+Finished job 46.
+62 of 73 steps (85%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:27:28 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam.bai
+    jobid: 212
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam
+    wildcards: sample=3d7-2000
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 212 with external jobid 'Submitted batch job 1145006'.
+
+[Thu Mar 21 15:27:28 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam.bai
+    jobid: 263
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam
+    wildcards: sample=RW015015-009009-ArtR22RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 263 with external jobid 'Submitted batch job 1145007'.
+
+[Thu Mar 21 15:27:28 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam.bai
+    jobid: 226
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-17017-448448-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 226 with external jobid 'Submitted batch job 1145008'.
+
+[Thu Mar 21 15:27:28 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam.bai
+    jobid: 252
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-26026-078078-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 252 with external jobid 'Submitted batch job 1145009'.
+[Thu Mar 21 15:27:29 2024]
+Finished job 280.
+63 of 73 steps (86%) done
+[Thu Mar 21 15:27:29 2024]
+Finished job 109.
+64 of 73 steps (88%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.bam.
+Select jobs to execute...
+
+[Thu Mar 21 15:27:29 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam.bai
+    jobid: 247
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam
+    wildcards: sample=RW-21021-090090-ArtR23RW-1
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 247 with external jobid 'Submitted batch job 1145010'.
+[Thu Mar 21 15:27:29 2024]
+Finished job 225.
+65 of 73 steps (89%) done
+[Thu Mar 21 15:27:29 2024]
+Finished job 228.
+66 of 73 steps (90%) done
+[Thu Mar 21 15:29:09 2024]
+Finished job 267.
+67 of 73 steps (92%) done
+[Thu Mar 21 15:29:09 2024]
+Finished job 212.
+68 of 73 steps (93%) done
+[Thu Mar 21 15:29:09 2024]
+Finished job 263.
+69 of 73 steps (95%) done
+[Thu Mar 21 15:29:09 2024]
+Finished job 226.
+70 of 73 steps (96%) done
+[Thu Mar 21 15:29:09 2024]
+Finished job 252.
+71 of 73 steps (97%) done
+[Thu Mar 21 15:29:09 2024]
+Finished job 247.
+72 of 73 steps (99%) done
+Select jobs to execute...
+
+[Thu Mar 21 15:29:09 2024]
+localrule all:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-1000.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-4000.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-500.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/NTP.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-11011-093093-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-301301-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-342342-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-304304-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-333333-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-359359-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-450450-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-459459-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-466466-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-481481-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-484484-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-492492-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-502502-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-509509-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-511511-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-582582-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-590590-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-109109-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-012012-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-168168-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-189189-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-191191-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-215215-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-221221-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-247247-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-260260-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-263263-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-033033-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-037037-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-015015-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-067067-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-068068-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW13013-105105-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-267267-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW18018-050050-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW60606-096096-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW80808-292292-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW80808-306306-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-16201620-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-1000.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-4000.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-500.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/NTP.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-11011-093093-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-301301-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-342342-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-304304-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-333333-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-359359-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-450450-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-459459-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-466466-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-481481-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-484484-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-492492-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-502502-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-509509-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-510510-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-511511-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-563563-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-582582-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-590590-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-109109-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-012012-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-168168-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-189189-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-191191-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-215215-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-221221-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-247247-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-260260-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-263263-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-033033-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-037037-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-015015-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-067067-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-068068-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW13013-105105-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-267267-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW18018-050050-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW60606-096096-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW80808-292292-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW80808-306306-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-16201620-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam.bai
+    jobid: 0
+    reason: Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW014014-112112-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-215215-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW90909-17111711-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-043043-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-448448-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-039039-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-496496-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW016016-054054-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-1000.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-4000.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-455455-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-393393-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-012012-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-21021-090090-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-191191-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW17017-270270-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-009009-ArtR22RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-599599-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-26026-078078-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW013013-262262-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-451451-ArtR23RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-489489-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW015015-075075-ArtR22RW-1.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-469469-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-434434-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/3d7-2000.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-13013-303303-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-24024-042042-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-17017-516516-ArtR23RW-1.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/mapping/bam_files/RW-14014-308308-ArtR23RW-1.sorted.bam.bai
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=2138, disk_mib=2039, tmpdir=/tmp, nodes=1, time_min=120
+
+[Thu Mar 21 15:29:09 2024]
+Finished job 0.
+73 of 73 steps (100%) done
+Complete log: .snakemake/log/2024-03-21T152159.856009.snakemake.log
