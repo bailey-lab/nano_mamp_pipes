@@ -16,7 +16,8 @@ def get_samples():
 rule all:
     input:
         sorted_bams=expand(config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam', sample=get_samples()),
-        bam_index=expand(config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam.bai', sample=get_samples())
+        bam_index=expand(config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam.bai', sample=get_samples()),
+        bams_with_target_coverage_list=config['output_dir'] + "/samples_for_targeted_calling/bam_with_coverage.txt"
 
 rule make_sam:
 	"""
@@ -63,41 +64,16 @@ rule index_bam:
 	shell:
 		'samtools index {input.sorted_bam}'
 
-
-
-
-# rule merge_bams_for_UCSC_summary:
-# 	"""
-# 	merge bams from all samples into one merged bam file for exploratory analysis by examining on UCSC cluster or for other summary purposes
-# 	"""
-# 	input:
-# 		bam_indices=config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam.bai',
-# 		sorted_bams=config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam'
-# 	output:
-# 		merged_multisample_bam_for_UCSC_browser=config["output_dir"]+'/mapping/bam_files/UCSC_bam_summary/multisample_merged.bam'
-# 	shell:
-# 		'samtools merge {output.merged_multisample_bam_for_UCSC_browser} {input.sorted_bams}'
-
-# rule sort_merged_bams_for_UCSC_summary:
-# 	"""
-# 	sort the merged "all sample" bam file by coordinate
-# 	"""
-# 	input:
-# 		merged_multisample_bam_for_UCSC_browser=config["output_dir"]+'/mapping/bam_files/UCSC_bam_summary/multisample_merged.bam'
-# 	output:
-# 		sorted_merged_bam=config["output_dir"]+'/mapping/bam_files/UCSC_bam_summary/multisample_merged.sorted.bam'
-# 	shell:
-# 		'samtools sort -o {output.sorted_merged_bam} {input.merged_multisample_bam_for_UCSC_browser}'
-
-# rule index_merged_bams_for_UCSC_summary:
-# 	"""
-# 	index the merged "all sample" bam file
-# 	"""
-# 	input:
-# 		sorted_merged_bam=config["output_dir"]+'/mapping/bam_files/UCSC_bam_summary/multisample_merged.sorted.bam'
-# 	output:
-# 		merged_bam_index=config["output_dir"]+'/mapping/bam_files/UCSC_bam_summary/multisample_merged.sorted.bam.bai'
-# 	shell:
-# 		'samtools index {input.sorted_merged_bam}'
-
-# """
+rule check_bam_coverage:
+    input:
+        bam_files=expand(config["output_dir"] + '/mapping/bam_files/{sample}.sorted.bam', sample=get_samples())
+    output:
+        bams_with_target_coverage_list=config['output_dir'] + "/samples_for_targeted_calling/bam_with_coverage.txt"
+    params:
+        out_dir=config["output_dir"],
+        resource_dir=config["project_resources"],
+        src_directory=config["src_path"]
+    shell:
+        """
+        sbatch --export=ALL {params.src_directory}/check_bams_for_target_reads.sh {params.out_dir} {params.resource_dir}
+        """

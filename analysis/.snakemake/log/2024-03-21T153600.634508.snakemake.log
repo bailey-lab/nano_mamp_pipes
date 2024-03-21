@@ -1,0 +1,4 @@
+FileNotFoundError in file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_variant_calling.smk, line 25:
+[Errno 2] No such file or directory: '/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output/samples_for_targeted_calling/bam_with_coverage.txt'
+  File "/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_variant_calling.smk", line 179, in <module>
+  File "/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_variant_calling.smk", line 25, in get_samples_for_targeted_calling_from_bam_coverage

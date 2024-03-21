@@ -1,0 +1,2 @@
+SyntaxError in file /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis/mips_to_nanopore_alignment_add_check_bams.smk, line 74:
+invalid syntax. Perhaps you forgot a comma?

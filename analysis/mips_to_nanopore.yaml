@@ -1,5 +1,5 @@
-fastq_dir: /nfs/jbailey5/baileyweb/asimkin/mips_to_nanopore/240215_MtoN_P2/guppy_version/prepped_reads/demuxed_fastq/fastq
-output_dir: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check
+fastq_dir: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq/fastq
+output_dir: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output
 project_resources: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/bams_to_vcf/resources # later on # find what probe set from Neeva # /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_project_resources/DR23K # old contents - not used currently
 genome_directory: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes
 clair3_sif_path: /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
