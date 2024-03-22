@@ -4,12 +4,18 @@
 #SBATCH --error=check_bam_coverage_%j.err
 #SBATCH --time=12:00:00
 #SBATCH --mem=4G
+#SBATCH --cpus-per-task=4 
 
 module load samtools
 
-# set paths
-out_dir=/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check
-resource_dir=/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/bams_to_vcf/resources
+# testing: set paths
+# out_dir=/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/second_output_rerun_for_completeness_check
+# resource_dir=/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/bams_to_vcf/resources
+
+# get paths as arguments
+out_dir=$1
+resource_dir=$2
+
 VCF_FILE=${resource_dir}/targets.vcf.gz 
 BAM_DIR=${out_dir}/mapping/bam_files
 
