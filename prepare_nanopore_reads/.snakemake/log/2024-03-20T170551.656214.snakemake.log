@@ -20,3 +20,19 @@ rule demux_files:
     resources: mem_mb=32000, mem_mib=30518, disk_mb=35275, disk_mib=33641, tmpdir=<TBD>, cluster_threads=1, time_min=2879, partition=batch, extra_flags=
 
 Submitted job 1 with external jobid 'Submitted batch job 1137328'.
+[Wed Mar 20 20:05:35 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed Mar 20 20:05:35 2024]
+localrule all:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq
+    jobid: 0
+    reason: Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=1000, disk_mib=954, tmpdir=/tmp, cluster_threads=1, time_min=120, partition=batch, extra_flags=
+
+[Wed Mar 20 20:05:35 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-03-20T170551.656214.snakemake.log

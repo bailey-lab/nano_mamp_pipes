@@ -13,3 +13,6 @@ rule demux_files:
     reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq
     resources: mem_mb=32000, mem_mib=30518, disk_mb=35275, disk_mib=33641, tmpdir=/tmp, cluster_threads=1, time_min=2879, partition=batch, extra_flags=
 
+[Wed Mar 20 20:05:00 2024]
+Finished job 0.
+1 of 1 steps (100%) done
