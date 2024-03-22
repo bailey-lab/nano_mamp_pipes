@@ -6,7 +6,13 @@
 #SBATCH -J nano_mamp_pipes
 #SBATCH --mail-type=END
 
-# Batch script ot run all steps of start to finish mips to nanopore pipeline including:
+################################################################################
+#
+# UNDER DEVELOPMENT: THIS SCRIPT IS NOT FULLY FUNCTIONING AND TESTED YET
+#
+################################################################################
+
+# Batch script to run all steps of start to finish mips to nanopore pipeline including:
 # This does not need lots of resources, but does need to run for as long as possible to allow submitting jobs for each smk step (96 hour for priority users)
 # 1. Run dorado basecalling
 # 2. Run demultiplexing

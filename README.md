@@ -1,8 +1,8 @@
-# NanoMAMP Pipes
+# NanoMAMP Pipeline
 
 ## Overview
 
-NanoMAMP Pipes is a fully automated bioinformatics pipeline built in snakemake designed for comprehensive analysis of short read targeted sequencing data from Nanopore platforms. This streamlined tool takes you from raw Nanopore output in FAST5 or POD5 formats through basecalling, custom sample barcode demultiplexing, alignment, variant calling, and post-variant analysis with integrated quality control checkpoints. NanoMAMP Pipes is designed to be run on a shared computing cluster running the SLURM Workload Manager.
+NanoMAMP Pipeline is a fully automated bioinformatics pipeline built in snakemake designed for comprehensive analysis of short read targeted sequencing data from Oxford Nanopore platforms. This streamlined tool takes you from raw Nanopore output in FAST5 or [POD5](https://github.com/nanoporetech/pod5-file-format) formats through basecalling, custom sample barcode demultiplexing, alignment, variant calling, and post-variant analysis with integrated quality control checkpoints. NanoMAMP Pipeline is designed to be run on a shared computing cluster running the SLURM Workload Manager.
 ## Features
 
 **Single-Step Execution:** Run your entire analysis with one command.
@@ -22,18 +22,22 @@ NanoMAMP Pipes is a fully automated bioinformatics pipeline built in snakemake d
 
 ### Prerequisites
 
-* Snakemake (tested on v7.28.3) 
+* [Snakemake](https://github.com/snakemake/snakemake) (tested on v7.28.3) 
 ```bash
 mamba create -c conda-forge -c bioconda -n nanomamp snakemake
 ```
-* Minimap2 (tested on v2.26 (r1175)) 
+* [Dorado](https://github.com/nanoporetech/dorado)
+
+Install Dorado according to the [instructions from Oxford Nanopore](https://github.com/nanoporetech/dorado?tab=readme-ov-file#installation).
+
+* [Minimap2](https://github.com/lh3/minimap2) (tested on v2.26 (r1175)) 
 ```bash
 mamba install -n nanomamp minimap2
 ```
-* Clair3 (tested on v1.0.5) 
+* [Clair3](https://github.com/HKU-BAL/Clair3)(tested on v1.0.5) 
 
 Install the Clair3 Singularity container following [these instructions](https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#option-2-singularity) and store the sif file in a convenient place. You'll specify this sif path in the yaml file
-### Install NanoMAMP Pipes
+### Install NanoMAMP Pipeline
 
 ```bash
 git clone https://github.com/bailey-lab/nano_mamp_pipes.git
@@ -44,7 +48,7 @@ Run the full automated pipeline from POD5 to VCF post-analysis in a single comma
 
 1. Set input paths and parameters in the YAML configuration file stored in  /nano_mamp_pipes/analysis/ 
 
-The `mips_to_nanopore.yaml` file is the central place for setting up your NanoMAMP Pipes analysis. Carefully check that you've input the correct paths and resources before running the pipeline.
+The `mips_to_nanopore.yaml` file is the central place for setting up your NanoMAMP Pipeline analysis. Carefully check that you've input the correct paths and resources before running the pipeline.
 
 In the YAML file, you'll specify:
 *`fastq_dir: /path/to/demuxed_fastq/fastq`
