@@ -6,13 +6,7 @@
 #SBATCH -J nano_mamp_pipes
 #SBATCH --mail-type=END
 
-################################################################################
-#
-# UNDER DEVELOPMENT: THIS SCRIPT IS NOT FULLY FUNCTIONING AND TESTED YET
-#
-################################################################################
-
-# Batch script to run all steps of start to finish mips to nanopore pipeline including:
+# Batch script ot run all steps of start to finish mips to nanopore pipeline including:
 # This does not need lots of resources, but does need to run for as long as possible to allow submitting jobs for each smk step (96 hour for priority users)
 # 1. Run dorado basecalling
 # 2. Run demultiplexing
@@ -57,4 +51,5 @@ sbatch  "$THEPATH"/src/check_bams_for_target_reads.sh
 snakemake -s  "$THEPATH"/src/mips_to_nanopore_variant_calling.smk --profile slurm
 
 # run vcf_to_tables and miplithon combined .py script
-snakemake -s  "$THEPATH"/src/variant_post_analysis.smk --profile slurm # this smk still to be written
+#snakemake -s  "$THEPATH"/src/variant_post_analysis.smk --profile slurm # this smk still to be written
+bash vcf_to_tables.sh # this needs to be automated and mipltithon and mamplicorn need to be incorporated still
