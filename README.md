@@ -79,4 +79,9 @@ snakemake -s mips_to_nanopore_variant_calling.smk --profile slurm
 ```
 
 # NanoMAMP Pipeline Diagram
-![pipeline_wireframe_diagram](https://github.com/bailey-lab/nano_mamp_pipes/blob/main/src/resources/wireframe_march2024.png?raw=true "NanoMAMP Pipeline Wireframe")
+![pipeline_wireframe_diagram](https://github.com/bailey-lab/nano_mamp_pipes/blob/main/src/resources/mips_to_nanopore.drawio.svg?raw=true "NanoMAMP Pipeline Wireframe")
+
+
+
+
+
