@@ -3,6 +3,8 @@
 ## Overview
 
 NanoMAMP Pipes is a fully automated bioinformatics pipeline built in snakemake designed for comprehensive analysis of short read targeted sequencing data from Nanopore platforms. This streamlined tool takes you from raw Nanopore output in FAST5 or POD5 formats through basecalling, custom sample barcode demultiplexing, alignment, variant calling, and post-variant analysis with integrated quality control checkpoints. NanoMAMP Pipes is designed to be run on a shared computing cluster running the SLURM Workload Manager.
+
+![pipeline_wireframe_diagram](https://github.com/bailey-lab/nano_mamp_pipes/blob/main/src/resources/mips_to_nanopore.drawio.svg?raw=true "NanoMAMP Pipeline Wireframe")
 ## Features
 
 **Single-Step Execution:** Run your entire analysis with one command.
@@ -77,11 +79,3 @@ snakemake -s mips_to_nanopore_alignment.smk --profile slurm
 ```
 snakemake -s mips_to_nanopore_variant_calling.smk --profile slurm
 ```
-
-# NanoMAMP Pipeline Diagram
-![pipeline_wireframe_diagram](https://github.com/bailey-lab/nano_mamp_pipes/blob/main/src/resources/mips_to_nanopore.drawio.svg?raw=true "NanoMAMP Pipeline Wireframe")
-
-
-
-
-
