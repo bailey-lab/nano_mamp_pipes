@@ -1,6 +1,6 @@
 fastq_dir: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/demuxed_fastq/fastq
 output_dir: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_pipeline_output
-project_resources: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/bams_to_vcf/resources # later on # find what probe set from Neeva # /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_project_resources/DR23K # old contents - not used currently
+project_resources: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/bams_to_vcf/resources # neevas rwandas samples are DR23KE. I prepared targets.vcf.gz for DR23KE and put in resources folder. Original 9.41 pipeline used DR23K targets.vcf.gz
 genome_directory: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes
 clair3_sif_path: /nfs/jbailey5/baileyweb/asimkin/aapter_test/run_230508_mipstoNanopore_P2/bam_to_vcf/clair3_latest.sif
 src_path: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/src # directory for storing all .py scripts called from any of the smks in the pipeline.

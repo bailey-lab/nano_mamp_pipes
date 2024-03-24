@@ -1,8 +1,8 @@
-# NanoMAMP Pipeline
+# NanoMAMP Pipes
 
 ## Overview
 
-NanoMAMP Pipeline is a fully automated bioinformatics pipeline built in snakemake designed for comprehensive analysis of short read targeted sequencing data from Oxford Nanopore platforms. This streamlined tool takes you from raw Nanopore output in FAST5 or [POD5](https://github.com/nanoporetech/pod5-file-format) formats through basecalling, custom sample barcode demultiplexing, alignment, variant calling, and post-variant analysis with integrated quality control checkpoints. NanoMAMP Pipeline is designed to be run on a shared computing cluster running the SLURM Workload Manager.
+NanoMAMP Pipes is a fully automated bioinformatics pipeline built in snakemake designed for comprehensive analysis of short read targeted sequencing data from Nanopore platforms. This streamlined tool takes you from raw Nanopore output in FAST5 or POD5 formats through basecalling, custom sample barcode demultiplexing, alignment, variant calling, and post-variant analysis with integrated quality control checkpoints. NanoMAMP Pipes is designed to be run on a shared computing cluster running the SLURM Workload Manager.
 ## Features
 
 **Single-Step Execution:** Run your entire analysis with one command.
@@ -22,22 +22,18 @@ NanoMAMP Pipeline is a fully automated bioinformatics pipeline built in snakemak
 
 ### Prerequisites
 
-* [Snakemake](https://github.com/snakemake/snakemake) (tested on v7.28.3) 
+* Snakemake (tested on v7.28.3) 
 ```bash
 mamba create -c conda-forge -c bioconda -n nanomamp snakemake
 ```
-* [Dorado](https://github.com/nanoporetech/dorado)
-
-Install Dorado according to the [instructions from Oxford Nanopore](https://github.com/nanoporetech/dorado?tab=readme-ov-file#installation).
-
-* [Minimap2](https://github.com/lh3/minimap2) (tested on v2.26 (r1175)) 
+* Minimap2 (tested on v2.26 (r1175)) 
 ```bash
 mamba install -n nanomamp minimap2
 ```
-* [Clair3](https://github.com/HKU-BAL/Clair3)(tested on v1.0.5) 
+* Clair3 (tested on v1.0.5) 
 
 Install the Clair3 Singularity container following [these instructions](https://github.com/HKU-BAL/Clair3?tab=readme-ov-file#option-2-singularity) and store the sif file in a convenient place. You'll specify this sif path in the yaml file
-### Install NanoMAMP Pipeline
+### Install NanoMAMP Pipes
 
 ```bash
 git clone https://github.com/bailey-lab/nano_mamp_pipes.git
@@ -48,15 +44,15 @@ Run the full automated pipeline from POD5 to VCF post-analysis in a single comma
 
 1. Set input paths and parameters in the YAML configuration file stored in  /nano_mamp_pipes/analysis/ 
 
-The `mips_to_nanopore.yaml` file is the central place for setting up your NanoMAMP Pipeline analysis. Carefully check that you've input the correct paths and resources before running the pipeline.
+The `mips_to_nanopore.yaml` file is the central place for setting up your NanoMAMP Pipes analysis. Carefully check that you've input the correct paths and resources before running the pipeline.
 
 In the YAML file, you'll specify:
-*`fastq_dir: /path/to/demuxed_fastq/fastq`
-*`output_dir: /path/to/pipeline_output`
-*`project_resources: /path/to/project_resources`
-*`genome_directory: /path/to/genome_resources`
-*`clair3_sif_path: /path/to/clair3_latest.sif`
-*`src_path: /path/to/pipeline_scripts`
+* `fastq_dir: /path/to/demuxed_fastq/fastq`
+* `output_dir: /path/to/pipeline_output`
+* `project_resources: /path/to/project_resources`
+* `genome_directory: /path/to/genome_resources`
+* `clair3_sif_path: /path/to/clair3_latest.sif`
+* `src_path: /path/to/pipeline_scripts`
 
 2. Run the automated one-step bash script which launches sequential snakemake scripts with automated parallelization and sample tracking from the /nano_mamp_pipes/analysis/ directory
 ```bash
@@ -81,3 +77,6 @@ snakemake -s mips_to_nanopore_alignment.smk --profile slurm
 ```
 snakemake -s mips_to_nanopore_variant_calling.smk --profile slurm
 ```
+
+# NanoMAMP Pipeline Diagram
+<a href='https://github.com/bailey-lab/nano_mamp_pipes/tree/main/src/resources/'><img src='wireframe_march2024.png' align="right" height="139" /></a>
