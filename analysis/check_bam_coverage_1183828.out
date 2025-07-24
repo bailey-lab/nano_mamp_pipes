@@ -1,0 +1,11 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1183828
+##  Job Name : check_bam_coverage
+##  Nodelist : node1734
+##      CPUs : 1
+##  Mem/Node : 4096 MB
+## Directory : /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/nano_mamp_pipes/analysis
+##   Job Started : Mon Mar 25 04:44:46 PM EDT 2024
+###############################################################################
+found reads in /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam
+bam files with coverage on at least one snp in specified targets file have been logged in /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/samples_for_targeted_calling/bam_with_coverage.txt

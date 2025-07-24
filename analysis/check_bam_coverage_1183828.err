@@ -1,0 +1,2 @@
+[E::idx_find_and_load] Could not retrieve index file for '/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam'
+samtools depth: cannot load index for "/nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam"

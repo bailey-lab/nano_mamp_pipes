@@ -1,0 +1,105 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Provided resources: nodes=200, mem_mb=1000000
+Job stats:
+job                   count    min threads    max threads
+------------------  -------  -------------  -------------
+all                       1              1              1
+check_bam_coverage        1              1              1
+index_bam                 1              1              1
+make_bam                  1              1              1
+make_sam                  1              1              1
+sort_bam                  1              1              1
+total                     6              1              1
+
+Select jobs to execute...
+
+[Mon Mar 25 15:56:36 2024]
+rule make_sam:
+    input: /nfs/jbailey5/baileyweb/bailey_share/resources/MIP_species_resources/pf/Pf_3D7/genomes/genome.fa, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/output/dorado_output/basecalls.fastq.gz
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/sam_files/basecalls.sam
+    jobid: 3
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/sam_files/basecalls.sam
+    wildcards: sample=basecalls
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=12708, disk_mib=12120, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 3 with external jobid 'Submitted batch job 1179284'.
+[Mon Mar 25 16:26:19 2024]
+Finished job 3.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Mon Mar 25 16:26:19 2024]
+rule make_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/sam_files/basecalls.sam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.bam
+    jobid: 2
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/sam_files/basecalls.sam
+    wildcards: sample=basecalls
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=38049, disk_mib=36287, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 2 with external jobid 'Submitted batch job 1179523'.
+[Mon Mar 25 16:34:00 2024]
+Finished job 2.
+2 of 6 steps (33%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/sam_files/basecalls.sam.
+Select jobs to execute...
+
+[Mon Mar 25 16:34:00 2024]
+rule sort_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam
+    jobid: 1
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.bam
+    wildcards: sample=basecalls
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=15238, disk_mib=14533, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 1 with external jobid 'Submitted batch job 1183793'.
+[Mon Mar 25 16:44:41 2024]
+Finished job 1.
+3 of 6 steps (50%) done
+Removing temporary output /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.bam.
+Select jobs to execute...
+
+[Mon Mar 25 16:44:42 2024]
+rule check_bam_coverage:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/samples_for_targeted_calling/bam_with_coverage.txt
+    jobid: 5
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/samples_for_targeted_calling/bam_with_coverage.txt; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=14553, disk_mib=13879, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 5 with external jobid 'Submitted batch job 1183826'.
+
+[Mon Mar 25 16:44:42 2024]
+rule index_bam:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam
+    output: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam.bai
+    jobid: 4
+    reason: Missing output files: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam.bai; Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam
+    wildcards: sample=basecalls
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=14553, disk_mib=13879, tmpdir=<TBD>, nodes=1, time_min=120
+
+Submitted job 4 with external jobid 'Submitted batch job 1183827'.
+Waiting at most 60 seconds for missing files.
+[Mon Mar 25 16:45:45 2024]
+Finished job 5.
+4 of 6 steps (67%) done
+Waiting at most 60 seconds for missing files.
+[Mon Mar 25 16:46:46 2024]
+Finished job 4.
+5 of 6 steps (83%) done
+Select jobs to execute...
+
+[Mon Mar 25 16:46:46 2024]
+localrule all:
+    input: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam.bai, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/samples_for_targeted_calling/bam_with_coverage.txt
+    jobid: 0
+    reason: Input files updated by another job: /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/samples_for_targeted_calling/bam_with_coverage.txt, /nfs/jbailey5/baileyweb/gtollefs/mips_to_nanopore_gt/240215_MtoN_P2/dorado_predemux_alignment_output/mapping/bam_files/basecalls.sorted.bam.bai
+    resources: mem_mb=4000, mem_mib=3815, disk_mb=14553, disk_mib=13879, tmpdir=/tmp, nodes=1, time_min=120
+
+[Mon Mar 25 16:46:46 2024]
+Finished job 0.
+6 of 6 steps (100%) done
+Complete log: .snakemake/log/2024-03-25T155632.437178.snakemake.log
