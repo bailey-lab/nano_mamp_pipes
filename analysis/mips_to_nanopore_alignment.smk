@@ -17,7 +17,7 @@ rule all:
     input:
         sorted_bams=expand(config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam', sample=get_samples()),
         bam_index=expand(config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam.bai', sample=get_samples()),
-        bams_with_target_coverage_list=config['output_dir'] + "/samples_for_targeted_calling/bam_with_coverage.txt"
+        coverage_table=config['output_dir'] + "/coverage_analysis/amplicon_coverage_table.tsv"
 
 rule make_sam:
 	"""
@@ -40,7 +40,7 @@ rule make_bam:
 	output:
 		sample_bam=temp(config["output_dir"]+'/mapping/bam_files/{sample}.bam')
 	shell:
-		'samtools view -b -o {output.sample_bam} {input.sample_sam}'
+		'module load samtools && samtools view -b -o {output.sample_bam} {input.sample_sam}'
 
 rule sort_bam:
 	"""
@@ -51,7 +51,7 @@ rule sort_bam:
 	output:
 		sorted_bam=config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam'
 	shell:
-		'samtools sort -o {output.sorted_bam} {input.sample_bam_to_sort}'
+		'module load samtools && samtools sort -o {output.sorted_bam} {input.sample_bam_to_sort}'
 
 rule index_bam:
 	"""
@@ -62,18 +62,51 @@ rule index_bam:
 	output:
 		bam_index=config["output_dir"]+'/mapping/bam_files/{sample}.sorted.bam.bai'
 	shell:
-		'samtools index {input.sorted_bam}'
+		'module load samtools && samtools index {input.sorted_bam}'
 
-rule check_bam_coverage:
+rule check_amplicon_coverage:
     input:
-        bam_files=expand(config["output_dir"] + '/mapping/bam_files/{sample}.sorted.bam', sample=get_samples())
+        bam_files=expand(config["output_dir"] + '/mapping/bam_files/{sample}.sorted.bam', sample=get_samples()),
+        bam_indices=expand(config["output_dir"] + '/mapping/bam_files/{sample}.sorted.bam.bai', sample=get_samples()),
+        amplicon_targets=config["amplicon_targets"]
     output:
-        bams_with_target_coverage_list=config['output_dir'] + "/samples_for_targeted_calling/bam_with_coverage.txt"
+        coverage_table=config['output_dir'] + "/coverage_analysis/amplicon_coverage_table.tsv"
     params:
-        out_dir=config["output_dir"],
-        resource_dir=config["project_resources"],
-        src_directory=config["src_path"]
+        output_dir=config["output_dir"] + "/coverage_analysis"
     shell:
         """
-        sbatch --export=ALL {params.src_directory}/check_bams_for_target_reads.sh {params.out_dir} {params.resource_dir}
+        module load samtools && \
+        mkdir -p {params.output_dir} && \
+        echo -e "Sample\tAmplicon\tChrom\tStart\tEnd\tReads_Mapped\tMean_Depth\tMedian_Depth" > {output.coverage_table} && \
+        for bam in {input.bam_files}; do
+            sample=$(basename $bam .sorted.bam)
+            while read chrom start end amplicon; do
+                # Create temporary filtered BAM with reads >= 2300bp
+                temp_bam="/tmp/${{sample}}_${{amplicon}}_filtered.bam"
+                samtools view -h $bam "$chrom:$start-$end" | awk 'substr($1,1,1)=="@" || length($10) >= 2300' | samtools view -b > $temp_bam
+                samtools index $temp_bam
+                
+                # Count reads and calculate mean and median depth from filtered BAM
+                reads=$(samtools view -c $temp_bam "$chrom:$start-$end")
+                depth_stats=$(samtools depth -r "$chrom:$start-$end" $temp_bam | awk '{{depths[NR]=$3; sum+=$3}} END {{
+                    if(NR==0) {{
+                        print "0\t0"
+                    }} else {{
+                        mean = sum/NR
+                        asort(depths)
+                        if(NR%2==1) {{
+                            median = depths[(NR+1)/2]
+                        }} else {{
+                            median = (depths[NR/2] + depths[NR/2+1])/2
+                        }}
+                        print mean "\t" median
+                    }}
+                }}')
+                
+                echo -e "$sample\t$amplicon\t$chrom\t$start\t$end\t$reads\t$depth_stats" >> {output.coverage_table}
+                
+                # Clean up temporary files
+                rm -f $temp_bam $temp_bam.bai
+            done < {input.amplicon_targets}
+        done
         """
